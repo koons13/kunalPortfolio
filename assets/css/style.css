@@ -52,10 +52,10 @@ $h6-line-height-touch:          $font-size-base * 1.5;
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #343a40;
-  --primary: #2F80ED;
+  --primary: #F2C94C;
   --secondary: #e4e4e4;
   --success: #27AE60;
-  --info: #30302e;
+  --info: #3D3D3D;
   --warning: #ffc107;
   --danger: #EB5757;
   --light: #f7f7f7;
@@ -98,7 +98,7 @@ body {
   font-size: 1rem;
   font-weight: 300;
   line-height: 1.5;
-  color: #30302e;
+  color: #3D3D3D;
   text-align: left;
   background-color: #fff;
 }
@@ -211,14 +211,14 @@ sup {
 
 /* line 186, node_modules/bootstrap/scss/_reboot.scss */
 a {
-  color: #2F80ED;
+  color: #F2C94C;
   text-decoration: none;
   background-color: transparent;
 }
 
 /* line 13, node_modules/bootstrap/scss/mixins/_hover.scss */
 a:hover {
-  color: #115bbf;
+  color: #e1ae10;
   text-decoration: underline;
 }
 
@@ -637,7 +637,7 @@ kbd {
   padding: 0.2rem 0.4rem;
   font-size: 87.5%;
   color: #fff;
-  background-color: #30302e;
+  background-color: #3D3D3D;
   border-radius: 0.2rem;
 }
 
@@ -652,7 +652,7 @@ kbd kbd {
 pre {
   display: block;
   font-size: 87.5%;
-  color: #30302e;
+  color: #3D3D3D;
 }
 
 /* line 37, node_modules/bootstrap/scss/_code.scss */
@@ -2503,7 +2503,7 @@ pre code {
 .table {
   width: 100%;
   margin-bottom: 1rem;
-  color: #30302e;
+  color: #3D3D3D;
 }
 
 /* line 11, node_modules/bootstrap/scss/_tables.scss */
@@ -2563,7 +2563,7 @@ pre code {
 
 /* line 13, node_modules/bootstrap/scss/mixins/_hover.scss */
 .table-hover tbody tr:hover {
-  color: #30302e;
+  color: #3D3D3D;
   background-color: rgba(0, 0, 0, 0.075);
 }
 
@@ -2571,7 +2571,7 @@ pre code {
 .table-primary,
 .table-primary > th,
 .table-primary > td {
-  background-color: #c5dbfa;
+  background-color: #fbf0cd;
 }
 
 /* line 14, node_modules/bootstrap/scss/mixins/_table-row.scss */
@@ -2579,18 +2579,18 @@ pre code {
 .table-primary td,
 .table-primary thead th,
 .table-primary tbody + tbody {
-  border-color: #93bdf6;
+  border-color: #f8e3a2;
 }
 
 /* line 13, node_modules/bootstrap/scss/mixins/_hover.scss */
 .table-hover .table-primary:hover {
-  background-color: #aeccf8;
+  background-color: #f9e9b5;
 }
 
 /* line 32, node_modules/bootstrap/scss/mixins/_table-row.scss */
 .table-hover .table-primary:hover > td,
 .table-hover .table-primary:hover > th {
-  background-color: #aeccf8;
+  background-color: #f9e9b5;
 }
 
 /* line 7, node_modules/bootstrap/scss/mixins/_table-row.scss */
@@ -2649,7 +2649,7 @@ pre code {
 .table-info,
 .table-info > th,
 .table-info > td {
-  background-color: #c5c5c4;
+  background-color: #c9c9c9;
 }
 
 /* line 14, node_modules/bootstrap/scss/mixins/_table-row.scss */
@@ -2657,18 +2657,18 @@ pre code {
 .table-info td,
 .table-info thead th,
 .table-info tbody + tbody {
-  border-color: #939392;
+  border-color: #9a9a9a;
 }
 
 /* line 13, node_modules/bootstrap/scss/mixins/_hover.scss */
 .table-hover .table-info:hover {
-  background-color: #b8b8b7;
+  background-color: #bcbcbc;
 }
 
 /* line 32, node_modules/bootstrap/scss/mixins/_table-row.scss */
 .table-hover .table-info:hover > td,
 .table-hover .table-info:hover > th {
-  background-color: #b8b8b7;
+  background-color: #bcbcbc;
 }
 
 /* line 7, node_modules/bootstrap/scss/mixins/_table-row.scss */
@@ -2963,10 +2963,10 @@ pre code {
 .form-control:focus {
   color: #495057;
   background-color: #fff;
-  border-color: #a4c8f7;
+  border-color: #fbedc3;
   outline: 0;
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(47, 128, 237, 0.25);
-          box-shadow: 0 0 0 0.2rem rgba(47, 128, 237, 0.25);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(242, 201, 76, 0.25);
+          box-shadow: 0 0 0 0.2rem rgba(242, 201, 76, 0.25);
 }
 
 /* line 43, node_modules/bootstrap/scss/_forms.scss */
@@ -3053,7 +3053,7 @@ select.form-control:focus::-ms-value {
   margin-bottom: 0;
   font-size: 1rem;
   line-height: 1.5;
-  color: #30302e;
+  color: #3D3D3D;
   background-color: transparent;
   border: solid transparent;
   border-width: 1px 0;
@@ -3530,7 +3530,7 @@ textarea.form-control {
 .btn {
   display: inline-block;
   font-weight: 400;
-  color: #30302e;
+  color: #3D3D3D;
   text-align: center;
   vertical-align: middle;
   -webkit-user-select: none;
@@ -3559,15 +3559,15 @@ textarea.form-control {
 
 /* line 13, node_modules/bootstrap/scss/mixins/_hover.scss */
 .btn:hover {
-  color: #30302e;
+  color: #3D3D3D;
   text-decoration: none;
 }
 
 /* line 27, node_modules/bootstrap/scss/_buttons.scss */
 .btn:focus, .btn.focus {
   outline: 0;
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(47, 128, 237, 0.25);
-          box-shadow: 0 0 0 0.2rem rgba(47, 128, 237, 0.25);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(242, 201, 76, 0.25);
+          box-shadow: 0 0 0 0.2rem rgba(242, 201, 76, 0.25);
 }
 
 /* line 34, node_modules/bootstrap/scss/_buttons.scss */
@@ -3588,75 +3588,75 @@ fieldset:disabled a.btn {
 
 /* line 66, node_modules/bootstrap/scss/_buttons.scss */
 .btn-primary {
-  color: #fff;
-  background-color: #2F80ED;
-  border-color: #2F80ED;
+  color: #3D3D3D;
+  background-color: #F2C94C;
+  border-color: #F2C94C;
 }
 
 /* line 13, node_modules/bootstrap/scss/mixins/_hover.scss */
 .btn-primary:hover {
-  color: #fff;
-  background-color: #146ce2;
-  border-color: #1366d6;
+  color: #3D3D3D;
+  background-color: #efbe28;
+  border-color: #efbb1c;
 }
 
 /* line 18, node_modules/bootstrap/scss/mixins/_buttons.scss */
 .btn-primary:focus, .btn-primary.focus {
-  color: #fff;
-  background-color: #146ce2;
-  border-color: #1366d6;
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(78, 147, 240, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(78, 147, 240, 0.5);
+  color: #3D3D3D;
+  background-color: #efbe28;
+  border-color: #efbb1c;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(215, 180, 74, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(215, 180, 74, 0.5);
 }
 
 /* line 32, node_modules/bootstrap/scss/mixins/_buttons.scss */
 .btn-primary.disabled, .btn-primary:disabled {
-  color: #fff;
-  background-color: #2F80ED;
-  border-color: #2F80ED;
+  color: #3D3D3D;
+  background-color: #F2C94C;
+  border-color: #F2C94C;
 }
 
 /* line 43, node_modules/bootstrap/scss/mixins/_buttons.scss */
 .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
 .show > .btn-primary.dropdown-toggle {
-  color: #fff;
-  background-color: #1366d6;
-  border-color: #1260cb;
+  color: #3D3D3D;
+  background-color: #efbb1c;
+  border-color: #edb711;
 }
 
 /* line 53, node_modules/bootstrap/scss/mixins/_buttons.scss */
 .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
 .show > .btn-primary.dropdown-toggle:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(78, 147, 240, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(78, 147, 240, 0.5);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(215, 180, 74, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(215, 180, 74, 0.5);
 }
 
 /* line 66, node_modules/bootstrap/scss/_buttons.scss */
 .btn-secondary {
-  color: #30302e;
+  color: #3D3D3D;
   background-color: #e4e4e4;
   border-color: #e4e4e4;
 }
 
 /* line 13, node_modules/bootstrap/scss/mixins/_hover.scss */
 .btn-secondary:hover {
-  color: #30302e;
+  color: #3D3D3D;
   background-color: #d1d1d1;
   border-color: #cbcbcb;
 }
 
 /* line 18, node_modules/bootstrap/scss/mixins/_buttons.scss */
 .btn-secondary:focus, .btn-secondary.focus {
-  color: #30302e;
+  color: #3D3D3D;
   background-color: #d1d1d1;
   border-color: #cbcbcb;
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(201, 201, 201, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(201, 201, 201, 0.5);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(203, 203, 203, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(203, 203, 203, 0.5);
 }
 
 /* line 32, node_modules/bootstrap/scss/mixins/_buttons.scss */
 .btn-secondary.disabled, .btn-secondary:disabled {
-  color: #30302e;
+  color: #3D3D3D;
   background-color: #e4e4e4;
   border-color: #e4e4e4;
 }
@@ -3664,7 +3664,7 @@ fieldset:disabled a.btn {
 /* line 43, node_modules/bootstrap/scss/mixins/_buttons.scss */
 .btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active,
 .show > .btn-secondary.dropdown-toggle {
-  color: #30302e;
+  color: #3D3D3D;
   background-color: #cbcbcb;
   border-color: #c4c4c4;
 }
@@ -3672,8 +3672,8 @@ fieldset:disabled a.btn {
 /* line 53, node_modules/bootstrap/scss/mixins/_buttons.scss */
 .btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus,
 .show > .btn-secondary.dropdown-toggle:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(201, 201, 201, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(201, 201, 201, 0.5);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(203, 203, 203, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(203, 203, 203, 0.5);
 }
 
 /* line 66, node_modules/bootstrap/scss/_buttons.scss */
@@ -3724,74 +3724,74 @@ fieldset:disabled a.btn {
 /* line 66, node_modules/bootstrap/scss/_buttons.scss */
 .btn-info {
   color: #fff;
-  background-color: #30302e;
-  border-color: #30302e;
+  background-color: #3D3D3D;
+  border-color: #3D3D3D;
 }
 
 /* line 13, node_modules/bootstrap/scss/mixins/_hover.scss */
 .btn-info:hover {
   color: #fff;
-  background-color: #1c1c1b;
-  border-color: #161615;
+  background-color: #2a2a2a;
+  border-color: #242424;
 }
 
 /* line 18, node_modules/bootstrap/scss/mixins/_buttons.scss */
 .btn-info:focus, .btn-info.focus {
   color: #fff;
-  background-color: #1c1c1b;
-  border-color: #161615;
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(79, 79, 77, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(79, 79, 77, 0.5);
+  background-color: #2a2a2a;
+  border-color: #242424;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(90, 90, 90, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(90, 90, 90, 0.5);
 }
 
 /* line 32, node_modules/bootstrap/scss/mixins/_buttons.scss */
 .btn-info.disabled, .btn-info:disabled {
   color: #fff;
-  background-color: #30302e;
-  border-color: #30302e;
+  background-color: #3D3D3D;
+  border-color: #3D3D3D;
 }
 
 /* line 43, node_modules/bootstrap/scss/mixins/_buttons.scss */
 .btn-info:not(:disabled):not(.disabled):active, .btn-info:not(:disabled):not(.disabled).active,
 .show > .btn-info.dropdown-toggle {
   color: #fff;
-  background-color: #161615;
-  border-color: #0f0f0f;
+  background-color: #242424;
+  border-color: #1d1d1d;
 }
 
 /* line 53, node_modules/bootstrap/scss/mixins/_buttons.scss */
 .btn-info:not(:disabled):not(.disabled):active:focus, .btn-info:not(:disabled):not(.disabled).active:focus,
 .show > .btn-info.dropdown-toggle:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(79, 79, 77, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(79, 79, 77, 0.5);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(90, 90, 90, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(90, 90, 90, 0.5);
 }
 
 /* line 66, node_modules/bootstrap/scss/_buttons.scss */
 .btn-warning {
-  color: #30302e;
+  color: #3D3D3D;
   background-color: #ffc107;
   border-color: #ffc107;
 }
 
 /* line 13, node_modules/bootstrap/scss/mixins/_hover.scss */
 .btn-warning:hover {
-  color: #30302e;
+  color: #3D3D3D;
   background-color: #e0a800;
   border-color: #d39e00;
 }
 
 /* line 18, node_modules/bootstrap/scss/mixins/_buttons.scss */
 .btn-warning:focus, .btn-warning.focus {
-  color: #30302e;
+  color: #3D3D3D;
   background-color: #e0a800;
   border-color: #d39e00;
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(224, 171, 13, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(224, 171, 13, 0.5);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(226, 173, 15, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(226, 173, 15, 0.5);
 }
 
 /* line 32, node_modules/bootstrap/scss/mixins/_buttons.scss */
 .btn-warning.disabled, .btn-warning:disabled {
-  color: #30302e;
+  color: #3D3D3D;
   background-color: #ffc107;
   border-color: #ffc107;
 }
@@ -3799,7 +3799,7 @@ fieldset:disabled a.btn {
 /* line 43, node_modules/bootstrap/scss/mixins/_buttons.scss */
 .btn-warning:not(:disabled):not(.disabled):active, .btn-warning:not(:disabled):not(.disabled).active,
 .show > .btn-warning.dropdown-toggle {
-  color: #30302e;
+  color: #3D3D3D;
   background-color: #d39e00;
   border-color: #c69500;
 }
@@ -3807,8 +3807,8 @@ fieldset:disabled a.btn {
 /* line 53, node_modules/bootstrap/scss/mixins/_buttons.scss */
 .btn-warning:not(:disabled):not(.disabled):active:focus, .btn-warning:not(:disabled):not(.disabled).active:focus,
 .show > .btn-warning.dropdown-toggle:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(224, 171, 13, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(224, 171, 13, 0.5);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(226, 173, 15, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(226, 173, 15, 0.5);
 }
 
 /* line 66, node_modules/bootstrap/scss/_buttons.scss */
@@ -3858,30 +3858,30 @@ fieldset:disabled a.btn {
 
 /* line 66, node_modules/bootstrap/scss/_buttons.scss */
 .btn-light {
-  color: #30302e;
+  color: #3D3D3D;
   background-color: #f7f7f7;
   border-color: #f7f7f7;
 }
 
 /* line 13, node_modules/bootstrap/scss/mixins/_hover.scss */
 .btn-light:hover {
-  color: #30302e;
+  color: #3D3D3D;
   background-color: #e4e4e4;
   border-color: #dedede;
 }
 
 /* line 18, node_modules/bootstrap/scss/mixins/_buttons.scss */
 .btn-light:focus, .btn-light.focus {
-  color: #30302e;
+  color: #3D3D3D;
   background-color: #e4e4e4;
   border-color: #dedede;
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(217, 217, 217, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(217, 217, 217, 0.5);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(219, 219, 219, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(219, 219, 219, 0.5);
 }
 
 /* line 32, node_modules/bootstrap/scss/mixins/_buttons.scss */
 .btn-light.disabled, .btn-light:disabled {
-  color: #30302e;
+  color: #3D3D3D;
   background-color: #f7f7f7;
   border-color: #f7f7f7;
 }
@@ -3889,7 +3889,7 @@ fieldset:disabled a.btn {
 /* line 43, node_modules/bootstrap/scss/mixins/_buttons.scss */
 .btn-light:not(:disabled):not(.disabled):active, .btn-light:not(:disabled):not(.disabled).active,
 .show > .btn-light.dropdown-toggle {
-  color: #30302e;
+  color: #3D3D3D;
   background-color: #dedede;
   border-color: #d7d7d7;
 }
@@ -3897,8 +3897,8 @@ fieldset:disabled a.btn {
 /* line 53, node_modules/bootstrap/scss/mixins/_buttons.scss */
 .btn-light:not(:disabled):not(.disabled):active:focus, .btn-light:not(:disabled):not(.disabled).active:focus,
 .show > .btn-light.dropdown-toggle:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(217, 217, 217, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(217, 217, 217, 0.5);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(219, 219, 219, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(219, 219, 219, 0.5);
 }
 
 /* line 66, node_modules/bootstrap/scss/_buttons.scss */
@@ -3948,42 +3948,42 @@ fieldset:disabled a.btn {
 
 /* line 72, node_modules/bootstrap/scss/_buttons.scss */
 .btn-outline-primary {
-  color: #2F80ED;
-  border-color: #2F80ED;
+  color: #F2C94C;
+  border-color: #F2C94C;
 }
 
 /* line 13, node_modules/bootstrap/scss/mixins/_hover.scss */
 .btn-outline-primary:hover {
-  color: #fff;
-  background-color: #2F80ED;
-  border-color: #2F80ED;
+  color: #3D3D3D;
+  background-color: #F2C94C;
+  border-color: #F2C94C;
 }
 
 /* line 74, node_modules/bootstrap/scss/mixins/_buttons.scss */
 .btn-outline-primary:focus, .btn-outline-primary.focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(47, 128, 237, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(47, 128, 237, 0.5);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(242, 201, 76, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(242, 201, 76, 0.5);
 }
 
 /* line 79, node_modules/bootstrap/scss/mixins/_buttons.scss */
 .btn-outline-primary.disabled, .btn-outline-primary:disabled {
-  color: #2F80ED;
+  color: #F2C94C;
   background-color: transparent;
 }
 
 /* line 85, node_modules/bootstrap/scss/mixins/_buttons.scss */
 .btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active,
 .show > .btn-outline-primary.dropdown-toggle {
-  color: #fff;
-  background-color: #2F80ED;
-  border-color: #2F80ED;
+  color: #3D3D3D;
+  background-color: #F2C94C;
+  border-color: #F2C94C;
 }
 
 /* line 92, node_modules/bootstrap/scss/mixins/_buttons.scss */
 .btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-primary.dropdown-toggle:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(47, 128, 237, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(47, 128, 237, 0.5);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(242, 201, 76, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(242, 201, 76, 0.5);
 }
 
 /* line 72, node_modules/bootstrap/scss/_buttons.scss */
@@ -3994,7 +3994,7 @@ fieldset:disabled a.btn {
 
 /* line 13, node_modules/bootstrap/scss/mixins/_hover.scss */
 .btn-outline-secondary:hover {
-  color: #30302e;
+  color: #3D3D3D;
   background-color: #e4e4e4;
   border-color: #e4e4e4;
 }
@@ -4014,7 +4014,7 @@ fieldset:disabled a.btn {
 /* line 85, node_modules/bootstrap/scss/mixins/_buttons.scss */
 .btn-outline-secondary:not(:disabled):not(.disabled):active, .btn-outline-secondary:not(:disabled):not(.disabled).active,
 .show > .btn-outline-secondary.dropdown-toggle {
-  color: #30302e;
+  color: #3D3D3D;
   background-color: #e4e4e4;
   border-color: #e4e4e4;
 }
@@ -4068,26 +4068,26 @@ fieldset:disabled a.btn {
 
 /* line 72, node_modules/bootstrap/scss/_buttons.scss */
 .btn-outline-info {
-  color: #30302e;
-  border-color: #30302e;
+  color: #3D3D3D;
+  border-color: #3D3D3D;
 }
 
 /* line 13, node_modules/bootstrap/scss/mixins/_hover.scss */
 .btn-outline-info:hover {
   color: #fff;
-  background-color: #30302e;
-  border-color: #30302e;
+  background-color: #3D3D3D;
+  border-color: #3D3D3D;
 }
 
 /* line 74, node_modules/bootstrap/scss/mixins/_buttons.scss */
 .btn-outline-info:focus, .btn-outline-info.focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(48, 48, 46, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(48, 48, 46, 0.5);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(61, 61, 61, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(61, 61, 61, 0.5);
 }
 
 /* line 79, node_modules/bootstrap/scss/mixins/_buttons.scss */
 .btn-outline-info.disabled, .btn-outline-info:disabled {
-  color: #30302e;
+  color: #3D3D3D;
   background-color: transparent;
 }
 
@@ -4095,15 +4095,15 @@ fieldset:disabled a.btn {
 .btn-outline-info:not(:disabled):not(.disabled):active, .btn-outline-info:not(:disabled):not(.disabled).active,
 .show > .btn-outline-info.dropdown-toggle {
   color: #fff;
-  background-color: #30302e;
-  border-color: #30302e;
+  background-color: #3D3D3D;
+  border-color: #3D3D3D;
 }
 
 /* line 92, node_modules/bootstrap/scss/mixins/_buttons.scss */
 .btn-outline-info:not(:disabled):not(.disabled):active:focus, .btn-outline-info:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-info.dropdown-toggle:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(48, 48, 46, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(48, 48, 46, 0.5);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(61, 61, 61, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(61, 61, 61, 0.5);
 }
 
 /* line 72, node_modules/bootstrap/scss/_buttons.scss */
@@ -4114,7 +4114,7 @@ fieldset:disabled a.btn {
 
 /* line 13, node_modules/bootstrap/scss/mixins/_hover.scss */
 .btn-outline-warning:hover {
-  color: #30302e;
+  color: #3D3D3D;
   background-color: #ffc107;
   border-color: #ffc107;
 }
@@ -4134,7 +4134,7 @@ fieldset:disabled a.btn {
 /* line 85, node_modules/bootstrap/scss/mixins/_buttons.scss */
 .btn-outline-warning:not(:disabled):not(.disabled):active, .btn-outline-warning:not(:disabled):not(.disabled).active,
 .show > .btn-outline-warning.dropdown-toggle {
-  color: #30302e;
+  color: #3D3D3D;
   background-color: #ffc107;
   border-color: #ffc107;
 }
@@ -4194,7 +4194,7 @@ fieldset:disabled a.btn {
 
 /* line 13, node_modules/bootstrap/scss/mixins/_hover.scss */
 .btn-outline-light:hover {
-  color: #30302e;
+  color: #3D3D3D;
   background-color: #f7f7f7;
   border-color: #f7f7f7;
 }
@@ -4214,7 +4214,7 @@ fieldset:disabled a.btn {
 /* line 85, node_modules/bootstrap/scss/mixins/_buttons.scss */
 .btn-outline-light:not(:disabled):not(.disabled):active, .btn-outline-light:not(:disabled):not(.disabled).active,
 .show > .btn-outline-light.dropdown-toggle {
-  color: #30302e;
+  color: #3D3D3D;
   background-color: #f7f7f7;
   border-color: #f7f7f7;
 }
@@ -4269,13 +4269,13 @@ fieldset:disabled a.btn {
 /* line 83, node_modules/bootstrap/scss/_buttons.scss */
 .btn-link {
   font-weight: 400;
-  color: #2F80ED;
+  color: #F2C94C;
   text-decoration: none;
 }
 
 /* line 13, node_modules/bootstrap/scss/mixins/_hover.scss */
 .btn-link:hover {
-  color: #115bbf;
+  color: #e1ae10;
   text-decoration: underline;
 }
 
@@ -4407,7 +4407,7 @@ input[type="button"].btn-block {
   padding: 0.5rem 0;
   margin: 0.125rem 0 0;
   font-size: 1rem;
-  color: #30302e;
+  color: #3D3D3D;
   text-align: left;
   list-style: none;
   background-color: #fff;
@@ -4613,7 +4613,7 @@ input[type="button"].btn-block {
   padding: 0.25rem 1.5rem;
   clear: both;
   font-weight: 400;
-  color: #30302e;
+  color: #3D3D3D;
   text-align: inherit;
   white-space: nowrap;
   background-color: transparent;
@@ -4622,7 +4622,7 @@ input[type="button"].btn-block {
 
 /* line 17, node_modules/bootstrap/scss/mixins/_hover.scss */
 .dropdown-item:hover, .dropdown-item:focus {
-  color: #232322;
+  color: #303030;
   text-decoration: none;
   background-color: #e4e4e4;
 }
@@ -4631,7 +4631,7 @@ input[type="button"].btn-block {
 .dropdown-item.active, .dropdown-item:active {
   color: #fff;
   text-decoration: none;
-  background-color: #2F80ED;
+  background-color: #F2C94C;
 }
 
 /* line 161, node_modules/bootstrap/scss/_dropdown.scss */
@@ -4660,7 +4660,7 @@ input[type="button"].btn-block {
 .dropdown-item-text {
   display: block;
   padding: 0.25rem 1.5rem;
-  color: #30302e;
+  color: #3D3D3D;
 }
 
 /* line 4, node_modules/bootstrap/scss/_button-group.scss */
@@ -5085,26 +5085,26 @@ input[type="button"].btn-block {
 /* line 32, node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-control-input:checked ~ .custom-control-label::before {
   color: #fff;
-  border-color: #2F80ED;
-  background-color: #2F80ED;
+  border-color: #F2C94C;
+  background-color: #F2C94C;
 }
 
 /* line 39, node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-control-input:focus ~ .custom-control-label::before {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(47, 128, 237, 0.25);
-          box-shadow: 0 0 0 0.2rem rgba(47, 128, 237, 0.25);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(242, 201, 76, 0.25);
+          box-shadow: 0 0 0 0.2rem rgba(242, 201, 76, 0.25);
 }
 
 /* line 48, node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
-  border-color: #a4c8f7;
+  border-color: #fbedc3;
 }
 
 /* line 52, node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-control-input:not(:disabled):active ~ .custom-control-label::before {
   color: #fff;
-  background-color: #d3e4fb;
-  border-color: #d3e4fb;
+  background-color: #fefbf2;
+  border-color: #fefbf2;
 }
 
 /* line 62, node_modules/bootstrap/scss/_custom-forms.scss */
@@ -5162,8 +5162,8 @@ input[type="button"].btn-block {
 
 /* line 128, node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-checkbox .custom-control-input:indeterminate ~ .custom-control-label::before {
-  border-color: #2F80ED;
-  background-color: #2F80ED;
+  border-color: #F2C94C;
+  background-color: #F2C94C;
 }
 
 /* line 133, node_modules/bootstrap/scss/_custom-forms.scss */
@@ -5173,12 +5173,12 @@ input[type="button"].btn-block {
 
 /* line 139, node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-checkbox .custom-control-input:disabled:checked ~ .custom-control-label::before {
-  background-color: rgba(47, 128, 237, 0.5);
+  background-color: rgba(242, 201, 76, 0.5);
 }
 
 /* line 142, node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-checkbox .custom-control-input:disabled:indeterminate ~ .custom-control-label::before {
-  background-color: rgba(47, 128, 237, 0.5);
+  background-color: rgba(242, 201, 76, 0.5);
 }
 
 /* line 153, node_modules/bootstrap/scss/_custom-forms.scss */
@@ -5193,7 +5193,7 @@ input[type="button"].btn-block {
 
 /* line 165, node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-radio .custom-control-input:disabled:checked ~ .custom-control-label::before {
-  background-color: rgba(47, 128, 237, 0.5);
+  background-color: rgba(242, 201, 76, 0.5);
 }
 
 /* line 176, node_modules/bootstrap/scss/_custom-forms.scss */
@@ -5240,7 +5240,7 @@ input[type="button"].btn-block {
 
 /* line 208, node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-switch .custom-control-input:disabled:checked ~ .custom-control-label::before {
-  background-color: rgba(47, 128, 237, 0.5);
+  background-color: rgba(242, 201, 76, 0.5);
 }
 
 /* line 221, node_modules/bootstrap/scss/_custom-forms.scss */
@@ -5264,10 +5264,10 @@ input[type="button"].btn-block {
 
 /* line 238, node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-select:focus {
-  border-color: #a4c8f7;
+  border-color: #fbedc3;
   outline: 0;
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(47, 128, 237, 0.25);
-          box-shadow: 0 0 0 0.2rem rgba(47, 128, 237, 0.25);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(242, 201, 76, 0.25);
+          box-shadow: 0 0 0 0.2rem rgba(242, 201, 76, 0.25);
 }
 
 /* line 248, node_modules/bootstrap/scss/_custom-forms.scss */
@@ -5340,9 +5340,9 @@ input[type="button"].btn-block {
 
 /* line 321, node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-file-input:focus ~ .custom-file-label {
-  border-color: #a4c8f7;
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(47, 128, 237, 0.25);
-          box-shadow: 0 0 0 0.2rem rgba(47, 128, 237, 0.25);
+  border-color: #fbedc3;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(242, 201, 76, 0.25);
+          box-shadow: 0 0 0 0.2rem rgba(242, 201, 76, 0.25);
 }
 
 /* line 327, node_modules/bootstrap/scss/_custom-forms.scss */
@@ -5415,18 +5415,18 @@ input[type="button"].btn-block {
 
 /* line 397, node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-range:focus::-webkit-slider-thumb {
-  -webkit-box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(47, 128, 237, 0.25);
-          box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(47, 128, 237, 0.25);
+  -webkit-box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(242, 201, 76, 0.25);
+          box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(242, 201, 76, 0.25);
 }
 
 /* line 398, node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-range:focus::-moz-range-thumb {
-  box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(47, 128, 237, 0.25);
+  box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(242, 201, 76, 0.25);
 }
 
 /* line 399, node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-range:focus::-ms-thumb {
-  box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(47, 128, 237, 0.25);
+  box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(242, 201, 76, 0.25);
 }
 
 /* line 402, node_modules/bootstrap/scss/_custom-forms.scss */
@@ -5439,7 +5439,7 @@ input[type="button"].btn-block {
   width: 1rem;
   height: 1rem;
   margin-top: -0.25rem;
-  background-color: #2F80ED;
+  background-color: #F2C94C;
   border: 0;
   border-radius: 1rem;
   -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
@@ -5460,7 +5460,7 @@ input[type="button"].btn-block {
 
 /* line 417, node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-range::-webkit-slider-thumb:active {
-  background-color: #d3e4fb;
+  background-color: #fefbf2;
 }
 
 /* line 422, node_modules/bootstrap/scss/_custom-forms.scss */
@@ -5478,7 +5478,7 @@ input[type="button"].btn-block {
 .custom-range::-moz-range-thumb {
   width: 1rem;
   height: 1rem;
-  background-color: #2F80ED;
+  background-color: #F2C94C;
   border: 0;
   border-radius: 1rem;
   -moz-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -5497,7 +5497,7 @@ input[type="button"].btn-block {
 
 /* line 443, node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-range::-moz-range-thumb:active {
-  background-color: #d3e4fb;
+  background-color: #fefbf2;
 }
 
 /* line 448, node_modules/bootstrap/scss/_custom-forms.scss */
@@ -5518,7 +5518,7 @@ input[type="button"].btn-block {
   margin-top: 0;
   margin-right: 0.2rem;
   margin-left: 0.2rem;
-  background-color: #2F80ED;
+  background-color: #F2C94C;
   border: 0;
   border-radius: 1rem;
   -ms-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -5536,7 +5536,7 @@ input[type="button"].btn-block {
 
 /* line 472, node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-range::-ms-thumb:active {
-  background-color: #d3e4fb;
+  background-color: #fefbf2;
 }
 
 /* line 477, node_modules/bootstrap/scss/_custom-forms.scss */
@@ -5687,7 +5687,7 @@ input[type="button"].btn-block {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #2F80ED;
+  background-color: #F2C94C;
 }
 
 /* line 92, node_modules/bootstrap/scss/_nav.scss */
@@ -6685,7 +6685,7 @@ input[type="button"].btn-block {
   padding: 0.5rem 0.75rem;
   margin-left: -1px;
   line-height: 1.25;
-  color: #2F80ED;
+  color: #F2C94C;
   background-color: #fff;
   border: 1px solid #dee2e6;
 }
@@ -6693,7 +6693,7 @@ input[type="button"].btn-block {
 /* line 18, node_modules/bootstrap/scss/_pagination.scss */
 .page-link:hover {
   z-index: 2;
-  color: #115bbf;
+  color: #e1ae10;
   text-decoration: none;
   background-color: #e4e4e4;
   border-color: #dee2e6;
@@ -6703,8 +6703,8 @@ input[type="button"].btn-block {
 .page-link:focus {
   z-index: 3;
   outline: 0;
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(47, 128, 237, 0.25);
-          box-shadow: 0 0 0 0.2rem rgba(47, 128, 237, 0.25);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(242, 201, 76, 0.25);
+          box-shadow: 0 0 0 0.2rem rgba(242, 201, 76, 0.25);
 }
 
 /* line 35, node_modules/bootstrap/scss/_pagination.scss */
@@ -6724,8 +6724,8 @@ input[type="button"].btn-block {
 .page-item.active .page-link {
   z-index: 3;
   color: #fff;
-  background-color: #2F80ED;
-  border-color: #2F80ED;
+  background-color: #F2C94C;
+  border-color: #F2C94C;
 }
 
 /* line 53, node_modules/bootstrap/scss/_pagination.scss */
@@ -6825,32 +6825,32 @@ a.badge:hover, a.badge:focus {
 
 /* line 51, node_modules/bootstrap/scss/_badge.scss */
 .badge-primary {
-  color: #fff;
-  background-color: #2F80ED;
+  color: #3D3D3D;
+  background-color: #F2C94C;
 }
 
 /* line 17, node_modules/bootstrap/scss/mixins/_hover.scss */
 a.badge-primary:hover, a.badge-primary:focus {
-  color: #fff;
-  background-color: #1366d6;
+  color: #3D3D3D;
+  background-color: #efbb1c;
 }
 
 /* line 11, node_modules/bootstrap/scss/mixins/_badge.scss */
 a.badge-primary:focus, a.badge-primary.focus {
   outline: 0;
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(47, 128, 237, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(47, 128, 237, 0.5);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(242, 201, 76, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(242, 201, 76, 0.5);
 }
 
 /* line 51, node_modules/bootstrap/scss/_badge.scss */
 .badge-secondary {
-  color: #30302e;
+  color: #3D3D3D;
   background-color: #e4e4e4;
 }
 
 /* line 17, node_modules/bootstrap/scss/mixins/_hover.scss */
 a.badge-secondary:hover, a.badge-secondary:focus {
-  color: #30302e;
+  color: #3D3D3D;
   background-color: #cbcbcb;
 }
 
@@ -6883,31 +6883,31 @@ a.badge-success:focus, a.badge-success.focus {
 /* line 51, node_modules/bootstrap/scss/_badge.scss */
 .badge-info {
   color: #fff;
-  background-color: #30302e;
+  background-color: #3D3D3D;
 }
 
 /* line 17, node_modules/bootstrap/scss/mixins/_hover.scss */
 a.badge-info:hover, a.badge-info:focus {
   color: #fff;
-  background-color: #161615;
+  background-color: #242424;
 }
 
 /* line 11, node_modules/bootstrap/scss/mixins/_badge.scss */
 a.badge-info:focus, a.badge-info.focus {
   outline: 0;
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(48, 48, 46, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(48, 48, 46, 0.5);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(61, 61, 61, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(61, 61, 61, 0.5);
 }
 
 /* line 51, node_modules/bootstrap/scss/_badge.scss */
 .badge-warning {
-  color: #30302e;
+  color: #3D3D3D;
   background-color: #ffc107;
 }
 
 /* line 17, node_modules/bootstrap/scss/mixins/_hover.scss */
 a.badge-warning:hover, a.badge-warning:focus {
-  color: #30302e;
+  color: #3D3D3D;
   background-color: #d39e00;
 }
 
@@ -6939,13 +6939,13 @@ a.badge-danger:focus, a.badge-danger.focus {
 
 /* line 51, node_modules/bootstrap/scss/_badge.scss */
 .badge-light {
-  color: #30302e;
+  color: #3D3D3D;
   background-color: #f7f7f7;
 }
 
 /* line 17, node_modules/bootstrap/scss/mixins/_hover.scss */
 a.badge-light:hover, a.badge-light:focus {
-  color: #30302e;
+  color: #3D3D3D;
   background-color: #dedede;
 }
 
@@ -7033,19 +7033,19 @@ a.badge-dark:focus, a.badge-dark.focus {
 
 /* line 49, node_modules/bootstrap/scss/_alert.scss */
 .alert-primary {
-  color: #18437b;
-  background-color: #d5e6fb;
-  border-color: #c5dbfa;
+  color: #7e6928;
+  background-color: #fcf4db;
+  border-color: #fbf0cd;
 }
 
 /* line 6, node_modules/bootstrap/scss/mixins/_alert.scss */
 .alert-primary hr {
-  border-top-color: #aeccf8;
+  border-top-color: #f9e9b5;
 }
 
 /* line 10, node_modules/bootstrap/scss/mixins/_alert.scss */
 .alert-primary .alert-link {
-  color: #102c50;
+  color: #57491c;
 }
 
 /* line 49, node_modules/bootstrap/scss/_alert.scss */
@@ -7084,19 +7084,19 @@ a.badge-dark:focus, a.badge-dark.focus {
 
 /* line 49, node_modules/bootstrap/scss/_alert.scss */
 .alert-info {
-  color: #191918;
-  background-color: #d6d6d5;
-  border-color: #c5c5c4;
+  color: #202020;
+  background-color: #d8d8d8;
+  border-color: #c9c9c9;
 }
 
 /* line 6, node_modules/bootstrap/scss/mixins/_alert.scss */
 .alert-info hr {
-  border-top-color: #b8b8b7;
+  border-top-color: #bcbcbc;
 }
 
 /* line 10, node_modules/bootstrap/scss/mixins/_alert.scss */
 .alert-info .alert-link {
-  color: black;
+  color: #070707;
 }
 
 /* line 49, node_modules/bootstrap/scss/_alert.scss */
@@ -7214,7 +7214,7 @@ a.badge-dark:focus, a.badge-dark.focus {
   color: #fff;
   text-align: center;
   white-space: nowrap;
-  background-color: #2F80ED;
+  background-color: #F2C94C;
   -webkit-transition: width 0.6s ease;
   transition: width 0.6s ease;
 }
@@ -7295,7 +7295,7 @@ a.badge-dark:focus, a.badge-dark.focus {
 
 /* line 34, node_modules/bootstrap/scss/_list-group.scss */
 .list-group-item-action:active {
-  color: #30302e;
+  color: #3D3D3D;
   background-color: #e4e4e4;
 }
 
@@ -7331,8 +7331,8 @@ a.badge-dark:focus, a.badge-dark.focus {
 .list-group-item.active {
   z-index: 2;
   color: #fff;
-  background-color: #2F80ED;
-  border-color: #2F80ED;
+  background-color: #F2C94C;
+  border-color: #F2C94C;
 }
 
 /* line 77, node_modules/bootstrap/scss/_list-group.scss */
@@ -7570,21 +7570,21 @@ a.badge-dark:focus, a.badge-dark.focus {
 
 /* line 4, node_modules/bootstrap/scss/mixins/_list-group.scss */
 .list-group-item-primary {
-  color: #18437b;
-  background-color: #c5dbfa;
+  color: #7e6928;
+  background-color: #fbf0cd;
 }
 
 /* line 17, node_modules/bootstrap/scss/mixins/_hover.scss */
 .list-group-item-primary.list-group-item-action:hover, .list-group-item-primary.list-group-item-action:focus {
-  color: #18437b;
-  background-color: #aeccf8;
+  color: #7e6928;
+  background-color: #f9e9b5;
 }
 
 /* line 14, node_modules/bootstrap/scss/mixins/_list-group.scss */
 .list-group-item-primary.list-group-item-action.active {
   color: #fff;
-  background-color: #18437b;
-  border-color: #18437b;
+  background-color: #7e6928;
+  border-color: #7e6928;
 }
 
 /* line 4, node_modules/bootstrap/scss/mixins/_list-group.scss */
@@ -7627,21 +7627,21 @@ a.badge-dark:focus, a.badge-dark.focus {
 
 /* line 4, node_modules/bootstrap/scss/mixins/_list-group.scss */
 .list-group-item-info {
-  color: #191918;
-  background-color: #c5c5c4;
+  color: #202020;
+  background-color: #c9c9c9;
 }
 
 /* line 17, node_modules/bootstrap/scss/mixins/_hover.scss */
 .list-group-item-info.list-group-item-action:hover, .list-group-item-info.list-group-item-action:focus {
-  color: #191918;
-  background-color: #b8b8b7;
+  color: #202020;
+  background-color: #bcbcbc;
 }
 
 /* line 14, node_modules/bootstrap/scss/mixins/_list-group.scss */
 .list-group-item-info.list-group-item-action.active {
   color: #fff;
-  background-color: #191918;
-  border-color: #191918;
+  background-color: #202020;
+  border-color: #202020;
 }
 
 /* line 4, node_modules/bootstrap/scss/mixins/_list-group.scss */
@@ -8409,7 +8409,7 @@ a.close.disabled {
 /* line 167, node_modules/bootstrap/scss/_popover.scss */
 .popover-body {
   padding: 0.5rem 0.75rem;
-  color: #30302e;
+  color: #3D3D3D;
 }
 
 /* line 14, node_modules/bootstrap/scss/_carousel.scss */
@@ -8773,14 +8773,14 @@ a.close.disabled {
 
 /* line 6, node_modules/bootstrap/scss/mixins/_background-variant.scss */
 .bg-primary {
-  background-color: #2F80ED !important;
+  background-color: #F2C94C !important;
 }
 
 /* line 17, node_modules/bootstrap/scss/mixins/_hover.scss */
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
-  background-color: #1366d6 !important;
+  background-color: #efbb1c !important;
 }
 
 /* line 6, node_modules/bootstrap/scss/mixins/_background-variant.scss */
@@ -8809,14 +8809,14 @@ button.bg-success:focus {
 
 /* line 6, node_modules/bootstrap/scss/mixins/_background-variant.scss */
 .bg-info {
-  background-color: #30302e !important;
+  background-color: #3D3D3D !important;
 }
 
 /* line 17, node_modules/bootstrap/scss/mixins/_hover.scss */
 a.bg-info:hover, a.bg-info:focus,
 button.bg-info:hover,
 button.bg-info:focus {
-  background-color: #161615 !important;
+  background-color: #242424 !important;
 }
 
 /* line 6, node_modules/bootstrap/scss/mixins/_background-variant.scss */
@@ -8929,7 +8929,7 @@ button.bg-dark:focus {
 
 /* line 20, node_modules/bootstrap/scss/utilities/_borders.scss */
 .border-primary {
-  border-color: #2F80ED !important;
+  border-color: #F2C94C !important;
 }
 
 /* line 20, node_modules/bootstrap/scss/utilities/_borders.scss */
@@ -8944,7 +8944,7 @@ button.bg-dark:focus {
 
 /* line 20, node_modules/bootstrap/scss/utilities/_borders.scss */
 .border-info {
-  border-color: #30302e !important;
+  border-color: #3D3D3D !important;
 }
 
 /* line 20, node_modules/bootstrap/scss/utilities/_borders.scss */
@@ -13761,12 +13761,12 @@ button.bg-dark:focus {
 
 /* line 6, node_modules/bootstrap/scss/mixins/_text-emphasis.scss */
 .text-primary {
-  color: #2F80ED !important;
+  color: #F2C94C !important;
 }
 
 /* line 17, node_modules/bootstrap/scss/mixins/_hover.scss */
 a.text-primary:hover, a.text-primary:focus {
-  color: #115bbf !important;
+  color: #e1ae10 !important;
 }
 
 /* line 6, node_modules/bootstrap/scss/mixins/_text-emphasis.scss */
@@ -13791,12 +13791,12 @@ a.text-success:hover, a.text-success:focus {
 
 /* line 6, node_modules/bootstrap/scss/mixins/_text-emphasis.scss */
 .text-info {
-  color: #30302e !important;
+  color: #3D3D3D !important;
 }
 
 /* line 17, node_modules/bootstrap/scss/mixins/_hover.scss */
 a.text-info:hover, a.text-info:focus {
-  color: #090909 !important;
+  color: #171717 !important;
 }
 
 /* line 6, node_modules/bootstrap/scss/mixins/_text-emphasis.scss */
@@ -13841,7 +13841,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 /* line 51, node_modules/bootstrap/scss/utilities/_text.scss */
 .text-body {
-  color: #30302e !important;
+  color: #3D3D3D !important;
 }
 
 /* line 52, node_modules/bootstrap/scss/utilities/_text.scss */
@@ -14011,9 +14011,9 @@ a {
  */
 /* line 16, src/assets/scss/base/_typography.scss */
 body {
-  color: #30302e;
+  color: #3D3D3D;
   font-family: "Domine", serif;
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.6rem;
 }
@@ -14177,20 +14177,34 @@ input, select {
 }
 
 /* line 1, src/assets/scss/pages/_home.scss */
+.page-contact {
+  padding-top: 20px;
+  min-height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* line 8, src/assets/scss/pages/_home.scss */
 .hi {
   font-size: 240px;
   font-weight: 700;
+  color: #3D3D3D;
 }
 
-/* line 7, src/assets/scss/pages/_home.scss */
+/* line 14, src/assets/scss/pages/_home.scss */
+.cat {
+  padding-left: 36px;
+}
+
+/* line 19, src/assets/scss/pages/_home.scss */
 .social a {
   color: #3D3D3D;
   font-size: 1.6rem;
 }
 
-/* line 10, src/assets/scss/pages/_home.scss */
+/* line 22, src/assets/scss/pages/_home.scss */
 .social a:hover {
-  color: #ced4da;
+  color: #F2C94C;
 }
 
 /* line 1, src/assets/scss/pages/_projects.scss */
@@ -14303,7 +14317,7 @@ input, select {
 
 /* line 78, src/assets/scss/pages/_projects.scss */
 .color-chess {
-  color: #0FC191;
+  color: #F2C94C;
   text-decoration: underline;
 }
 
@@ -14314,7 +14328,7 @@ input, select {
 
 /* line 85, src/assets/scss/pages/_projects.scss */
 .color-instynt {
-  color: #2F80ED;
+  color: #F2C94C;
   text-decoration: underline;
 }
 
@@ -14381,10 +14395,9 @@ input, select {
   color: #adb5bd;
 }
 
-/* line 136, src/assets/scss/pages/_projects.scss */
-.project-thumb:hover img {
-  -webkit-transform: scale(1.06);
-          transform: scale(1.06);
+/* line 139, src/assets/scss/pages/_projects.scss */
+hr.persona-line {
+  border-color: #f1f1f1;
 }
 
 /*# sourceMappingURL=../../../scss */
