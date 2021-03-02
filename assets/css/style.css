@@ -14209,12 +14209,12 @@ input, select {
 
 /* line 1, src/assets/scss/pages/_projects.scss */
 .project-title {
-  font-size: 64px;
+  font-size: 5rem;
 }
 
 /* line 4, src/assets/scss/pages/_projects.scss */
 .title-text-final-design {
-  max-width: 300px;
+  max-width: 600px;
 }
 
 /* line 9, src/assets/scss/pages/_projects.scss */
@@ -14328,13 +14328,13 @@ input, select {
 
 /* line 85, src/assets/scss/pages/_projects.scss */
 .color-instynt {
-  color: #F2C94C;
+  color: #3D3D3D;
   text-decoration: underline;
 }
 
 /* line 88, src/assets/scss/pages/_projects.scss */
 .color-instynt:hover {
-  color: #adb5bd;
+  color: #F2C94C;
 }
 
 /* line 92, src/assets/scss/pages/_projects.scss */
@@ -14381,18 +14381,18 @@ input, select {
 }
 
 /* line 128, src/assets/scss/pages/_projects.scss */
+.project-thumb p {
+  color: #adb5bd;
+}
+
+/* line 131, src/assets/scss/pages/_projects.scss */
 .project-thumb:hover {
   text-decoration: none;
 }
 
-/* line 130, src/assets/scss/pages/_projects.scss */
+/* line 133, src/assets/scss/pages/_projects.scss */
 .project-thumb:hover .title {
   text-decoration: underline;
-}
-
-/* line 133, src/assets/scss/pages/_projects.scss */
-.project-thumb:hover p {
-  color: #adb5bd;
 }
 
 /* line 139, src/assets/scss/pages/_projects.scss */
@@ -14402,22 +14402,29 @@ p {
 
 /* line 143, src/assets/scss/pages/_projects.scss */
 h2 {
-  font-size: 2rem;
+  font-size: 3rem;
+  padding-top: 4rem;
 }
 
-/* line 147, src/assets/scss/pages/_projects.scss */
+/* line 148, src/assets/scss/pages/_projects.scss */
 h4 {
   font-size: 1.5rem;
 }
 
-/* line 151, src/assets/scss/pages/_projects.scss */
+/* line 152, src/assets/scss/pages/_projects.scss */
 .body-text {
   font-size: 1rem;
 }
 
-/* line 155, src/assets/scss/pages/_projects.scss */
+/* line 156, src/assets/scss/pages/_projects.scss */
 hr.persona-line {
   border-color: #f1f1f1;
+}
+
+/* line 160, src/assets/scss/pages/_projects.scss */
+.research-icons {
+  padding-left: 2.5rem;
+  padding-bottom: 1rem;
 }
 
 /*# sourceMappingURL=../../../scss */
