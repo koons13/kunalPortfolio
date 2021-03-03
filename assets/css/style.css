@@ -14423,13 +14423,20 @@ h4 {
 
 /* line 160, src/assets/scss/pages/_projects.scss */
 hr.persona-line {
-  border-color: #f1f1f1;
+  border-color: #e0e0e0;
 }
 
 /* line 164, src/assets/scss/pages/_projects.scss */
 .research-icons {
   padding-left: 2.5rem;
   padding-bottom: 1rem;
+}
+
+/* line 169, src/assets/scss/pages/_projects.scss */
+.persona_name {
+  color: #F2C94C;
+  font-size: 2rem;
+  padding-top: 0px;
 }
 
 /*# sourceMappingURL=../../../scss */
