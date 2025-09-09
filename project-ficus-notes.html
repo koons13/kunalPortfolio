@@ -80,6 +80,28 @@
             height: 16px;
             background-color: #000;
         }
+        
+        /* Ficus Logo Animation Styles */
+        #ellipse-1, #ellipse-2, #ellipse-3, #ellipse-4, #ellipse-5 {
+            transition: d 2s ease-in-out;
+            shape-rendering: geometricPrecision;
+            vector-effect: non-scaling-stroke;
+        }
+        
+        .logo-container svg {
+            shape-rendering: geometricPrecision;
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: crisp-edges;
+        }
+        
+        .logo-container {
+            animation: logoFloat 3s ease-in-out infinite;
+        }
+        
+        @keyframes logoFloat {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
     </style>
 <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -144,7 +166,7 @@
                                 </p>
                             </div>
                             <div class="col-12 col-md-5 text-center text-md-end">
-                                <img src="assets/img/projects/project-ficus-notes/Ficus-Logo.png" alt="Ficus Notes Logo" style="max-width: 16.0625rem; height: auto; width: 100%;">
+                                <img src="assets/img/projects/project-ficus-notes/Ficus-Logo.svg" alt="Ficus Notes Logo" style="max-width: 16.0625rem; height: auto; width: 100%;">
                             </div>
                         </div>
                     </div>
@@ -666,6 +688,31 @@
                         <p class="body-text" style="color: #000; font-family: Montserrat; font-style: normal; font-weight: 400; line-height: 1.75rem;">• Schedule - in the first tab it should be sorted according to date created, not the date of schedule</p>
                     </div>
                 </div>
+
+                <!-- Ficus Logo Animation Section -->
+                <div class="row mb-5">
+                    <div class="col-12 col-lg-10 offset-lg-1">
+                        <div class="text-center" style="padding: 4rem 0;">
+                            <div class="logo-container" style="display: inline-block; position: relative;">
+                                <svg width="257" height="272" viewBox="0 0 257 272" fill="none" xmlns="http://www.w3.org/2000/svg" style="max-width: 300px; height: auto; overflow: hidden;">
+                                    <rect width="257" height="272" fill="#262626"/>
+                                    <g id="Logo GIF Animation">
+                                        <path d="M-908 -1056C-908 -1057.1 -907.105 -1058 -906 -1058H12787C12788.1 -1058 12789 -1057.1 12789 -1056V1845C12789 1846.1 12788.1 1847 12787 1847H-906C-907.104 1847 -908 1846.1 -908 1845V-1056Z" fill="white"/>
+                                        <path d="M-906 -1058V-1057H12787V-1058V-1059H-906V-1058ZM12789 -1056H12788V1845H12789H12790V-1056H12789ZM12787 1847V1846H-906V1847V1848H12787V1847ZM-908 1845H-907V-1056H-908H-909V1845H-908ZM-906 1847V1846C-906.552 1846 -907 1845.55 -907 1845H-908H-909C-909 1846.66 -907.657 1848 -906 1848V1847ZM12789 1845H12788C12788 1845.55 12787.6 1846 12787 1846V1847V1848C12788.7 1848 12790 1846.66 12790 1845H12789ZM12787 -1058V-1057C12787.6 -1057 12788 -1056.55 12788 -1056H12789H12790C12790 -1057.66 12788.7 -1059 12787 -1059V-1058ZM-906 -1058V-1059C-907.657 -1059 -909 -1057.66 -909 -1056H-908H-907C-907 -1056.55 -906.552 -1057 -906 -1057V-1058Z" fill="white" fill-opacity="0.1"/>
+                                        <g id="Ficus-Logo">
+                                            <!-- All 5 Ellipses for simultaneous morphing -->
+                                            <path id="ellipse-1" opacity="0.5" d="M83.3247 125.74C115.189 157.604 142.254 228.229 133.923 236.56C131.33 239.442 130.286 239.797 128.502 240.059C107.796 240.687 71.5288 232.279 46.3056 204.044C12.4238 169.033 13.6787 116.328 21.3334 101.52C29.6645 93.1892 51.4599 93.8748 83.3247 125.74Z" fill="black"/>
+                                            <path id="ellipse-2" opacity="0.5" d="M165.867 119.59C188.857 158.348 139.1 232.954 133.871 236.626C132.962 237.412 131.429 239.792 128.597 240.059C121.946 240.686 92.0631 219.642 75.1034 181.292C52.1137 142.534 60.3314 33.7561 82.7938 26.6033C106.26 16.5643 142.877 80.8319 165.867 119.59Z" fill="black"/>
+                                            <path id="ellipse-3" opacity="0.5" d="M191.779 76.9692C191.779 138.651 140.557 240.823 128.499 240.059C124.777 240.059 122.05 237.302 118.231 226.324C111.636 207.364 107.167 170.693 107.167 128.499C107.167 66.8178 116.718 16.8149 128.5 16.8149C140.282 16.8149 191.779 15.2875 191.779 76.9692Z" fill="black"/>
+                                            <path id="ellipse-4" opacity="0.5" d="M202.114 158.192C178.641 209.887 141.529 240.264 128.502 240.059C127.768 239.961 127.098 239.845 126.492 239.682C115.112 236.633 121.159 188.736 136.561 131.253C151.963 73.7713 206.516 62.8834 217.896 65.9327C228.563 69.07 240.388 100.216 202.114 158.192Z" fill="black"/>
+                                            <path id="ellipse-5" opacity="0.5" d="M233.659 111.81C241.314 126.618 248.839 172.22 212.828 201.564C167.5 238.5 128.499 240.059 128.499 240.059C128.499 240.059 121.5 240.501 121.636 230.798C124.208 209.729 155.283 152.84 182.446 125.677C214.311 93.812 226.38 101.646 233.659 111.81Z" fill="black"/>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
@@ -682,6 +729,8 @@
     <script src="assets/js/util/crossPlatform.js"></script>
     <script src="config.js"></script>
     <script src="assets/js/main.js"></script>
+    <!-- Ficus Logo Animation -->
+    <script src="assets/img/projects/project-ficus-notes/ficus-logo-animation.js"></script>
     <!--Page Specific JS-->
     <script>
         function toggleCollapsible(elementId) {
@@ -751,6 +800,8 @@
             
             // Set up active section highlighting
             setupActiveSectionHighlighting();
+            
+            // Ficus logo animation is now handled by external script
             
             // Handle Overview link click to scroll to top
             const overviewLink = document.querySelector('.sticky-nav a[href="#"]');
