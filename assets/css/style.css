@@ -11045,7 +11045,7 @@ button.bg-dark:focus {
 /* line 20, node_modules/bootstrap/scss/utilities/_spacing.scss */
 .mb-5,
 .my-5 {
-  margin-bottom: 3rem !important;
+  margin-bottom: 1rem !important;
 }
 
 /* line 24, node_modules/bootstrap/scss/utilities/_spacing.scss */
