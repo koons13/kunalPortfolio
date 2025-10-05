@@ -90,6 +90,43 @@
             transform: translateY(-5px);
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
         }
+        
+        /* Progression Icon Animation */
+        
+        /* Individual arrow animations - sequential appearance */
+        .progression-icon .arrow-1 {
+            opacity: 0;
+            transform: translateX(-30px) scale(0.8);
+            transition: all 0.6s ease-out;
+        }
+        
+        .progression-icon .arrow-2 {
+            opacity: 0;
+            transform: translate(-51.5px, 0) translateX(-30px) scale(0.8);
+            transition: all 0.6s ease-out;
+        }
+        
+        .progression-icon .arrow-3 {
+            opacity: 1;
+            transform: translate(-103px, 0) translateX(0) scale(1);
+            transition: all 0.6s ease-out;
+        }
+        
+        /* Sequential slide-in with bounce effect */
+        @keyframes slideInBounce {
+            0% {
+                opacity: 0;
+                transform: translateX(-30px) scale(0.8);
+            }
+            60% {
+                opacity: 1;
+                transform: translateX(5px) scale(1.05);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0) scale(1);
+            }
+        }
     </style>
 <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -211,21 +248,33 @@
                         <div class="row">
                             <div class="col-12 col-md-4 mb-4">
                                 <div class="text-left">
-                                    <img src="assets/img/projects/project-battlepass-fvce/icon-objective-retention.png" alt="Daily Retention" style="width: 100%; max-width: 160px; height: 120px; object-fit: contain; margin-bottom: 1rem;">
+                                    <img src="assets/img/projects/project-battlepass-fvce/icon-objective-retention.svg" alt="Daily Retention" style="width: 100%; max-width: 160px; height: 120px; object-fit: contain; margin-bottom: 1rem;">
                                     <h4 style="color: #000; font-family: Montserrat; font-style: normal; font-weight: 400; line-height: 1.75rem; margin-bottom: 0.5rem; font-size: 1rem;">Daily Retention</h4>
                                     <p style="color: var(--Context-Text, #777); font-family: Montserrat; font-size: 0.875rem; font-style: normal; font-weight: 400; line-height: 1.75rem; margin-bottom: 0;">Achievable tasks and<br>time-limited rewards</p>
                                 </div>
                             </div>
                             <div class="col-12 col-md-4 mb-4">
                                 <div class="text-left">
-                                    <img src="assets/img/projects/project-battlepass-fvce/icon--objective-progression.png" alt="Progression System" style="width: 100%; max-width: 160px; height: 120px; object-fit: contain; margin-bottom: 1rem;">
+                                    <div class="progression-icon" style="width: 100%; max-width: 160px; height: 120px; margin-bottom: 1rem;">
+                                        <svg width="163" height="72" viewBox="0 0 163 72" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: 100%; object-fit: contain;">
+                                            <g class="arrow-1">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M121.929 36.0035L103.806 7.13336C101.856 4.0269 104.067 0.00140635 107.594 0.00140635H138.36C139.903 0.00140635 141.312 0.790037 142.147 2.12721L162.66 34.8104C163.134 35.5716 163.101 36.518 162.633 37.2243L142.153 69.8742C141.318 71.2114 139.902 72 138.365 72H107.593C104.066 72 101.855 67.9745 103.805 64.868L121.929 36.0035ZM107.414 4.75283L126.258 34.7764C126.719 35.4827 126.759 36.4291 126.285 37.1903L107.415 67.2472C107.335 67.3775 107.375 67.59 107.595 67.59L138.476 67.5763L158.308 36.0044L138.476 4.42541L107.476 4.43912L107.414 4.75283Z" fill="#9D9D9D"/>
+                                            </g>
+                                            <g class="arrow-2" transform="translate(-51.5, 0)">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M121.929 36.0035L103.806 7.13336C101.856 4.0269 104.067 0.00140635 107.594 0.00140635H138.36C139.903 0.00140635 141.312 0.790037 142.147 2.12721L162.66 34.8104C163.134 35.5716 163.101 36.518 162.633 37.2243L142.153 69.8742C141.318 71.2114 139.902 72 138.365 72H107.593C104.066 72 101.855 67.9745 103.805 64.868L121.929 36.0035ZM107.414 4.75283L126.258 34.7764C126.719 35.4827 126.759 36.4291 126.285 37.1903L107.415 67.2472C107.335 67.3775 107.375 67.59 107.595 67.59L138.476 67.5763L158.308 36.0044L138.476 4.42541L107.476 4.43912L107.414 4.75283Z" fill="#9D9D9D"/>
+                                            </g>
+                                            <g class="arrow-3" transform="translate(-103, 0)">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M121.929 36.0035L103.806 7.13336C101.856 4.0269 104.067 0.00140635 107.594 0.00140635H138.36C139.903 0.00140635 141.312 0.790037 142.147 2.12721L162.66 34.8104C163.134 35.5716 163.101 36.518 162.633 37.2243L142.153 69.8742C141.318 71.2114 139.902 72 138.365 72H107.593C104.066 72 101.855 67.9745 103.805 64.868L121.929 36.0035ZM107.414 4.75283L126.258 34.7764C126.719 35.4827 126.759 36.4291 126.285 37.1903L107.415 67.2472C107.335 67.3775 107.375 67.59 107.595 67.59L138.476 67.5763L158.308 36.0044L138.476 4.42541L107.476 4.43912L107.414 4.75283Z" fill="#9D9D9D"/>
+                                            </g>
+                                        </svg>
+                                    </div>
                                     <h4 style="color: #000; font-family: Montserrat; font-style: normal; font-weight: 400; line-height: 1.75rem; margin-bottom: 0.5rem; font-size: 1rem;">Progression System</h4>
                                     <p style="color: var(--Context-Text, #777); font-family: Montserrat; font-size: 0.875rem; font-style: normal; font-weight: 400; line-height: 1.75rem; margin-bottom: 0;">Free and premium players<br>with clear value tiers</p>
                                 </div>
                             </div>
                             <div class="col-12 col-md-4 mb-4">
                                 <div class="text-left">
-                                    <img src="assets/img/projects/project-battlepass-fvce/icon-objective-repeat.png" alt="Repeatable Feature" style="width: 100%; max-width: 160px; height: 120px; object-fit: contain; margin-bottom: 1rem;">
+                                    <img src="assets/img/projects/project-battlepass-fvce/icon-objective-repeat.svg" alt="Repeatable Feature" style="width: 100%; max-width: 160px; height: 120px; object-fit: contain; margin-bottom: 1rem;">
                                     <h4 style="color: #000; font-family: Montserrat; font-style: normal; font-weight: 400; line-height: 1.75rem; margin-bottom: 0.5rem; font-size: 1rem;">Repeatable Feature</h4>
                                     <p style="color: var(--Context-Text, #777); font-family: Montserrat; font-size: 0.875rem; font-style: normal; font-weight: 400; line-height: 1.75rem; margin-bottom: 0;">Sustained revenue<br>without fatigue</p>
                                 </div>
@@ -586,26 +635,34 @@
             });
         }
 
-        // Use Intersection Observer to trigger animation when infographics come into view
-        const observerOptions = {
-            threshold: 0.3,
-            rootMargin: '0px 0px -50px 0px'
+
+        // Progression Icon Animation Observer
+        const progressionObserverOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px 0px 0px'
         };
 
-        const observer = new IntersectionObserver((entries) => {
+        const progressionObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
+                console.log('Progression icon intersection:', entry.isIntersecting, 'Ratio:', entry.intersectionRatio);
                 if (entry.isIntersecting) {
-                    animateProgressCircles();
-                    observer.unobserve(entry.target);
+                    console.log('Triggering progression animation!');
+                    triggerSequentialAnimation(entry.target);
+                    progressionObserver.unobserve(entry.target);
                 }
             });
-        }, observerOptions);
+        }, progressionObserverOptions);
 
         // Start observing when DOM is loaded
         document.addEventListener('DOMContentLoaded', () => {
-            const infographicsSection = document.querySelector('.infographic-item').parentElement;
-            if (infographicsSection) {
-                observer.observe(infographicsSection);
+            // Start observing progression icon for animation
+            const progressionIcon = document.querySelector('.progression-icon');
+            console.log('Progression icon found for observation:', progressionIcon);
+            if (progressionIcon) {
+                console.log('Starting to observe progression icon');
+                progressionObserver.observe(progressionIcon);
+            } else {
+                console.log('Progression icon not found!');
             }
             
             // Set up active section highlighting
@@ -626,6 +683,57 @@
             }
         });
         
+        
+        // Function to animate individual arrow
+        function animateArrow(arrow, delay) {
+            setTimeout(() => {
+                if (arrow) {
+                    // Set final position based on arrow class
+                    if (arrow.classList.contains('arrow-1')) {
+                        arrow.style.opacity = '1';
+                        arrow.style.transform = 'translateX(0) scale(1)';
+                    } else if (arrow.classList.contains('arrow-2')) {
+                        arrow.style.opacity = '1';
+                        arrow.style.transform = 'translate(-51.5px, 0) translateX(0) scale(1)';
+                    } else if (arrow.classList.contains('arrow-3')) {
+                        arrow.style.opacity = '1';
+                        arrow.style.transform = 'translate(-103px, 0) translateX(0) scale(1)';
+                    }
+                }
+            }, delay);
+        }
+        
+        // Function to trigger sequential animation (used by scroll observer)
+        function triggerSequentialAnimation(progressionIcon) {
+            console.log('triggerSequentialAnimation called with:', progressionIcon);
+            // Find arrows using the most reliable selector
+            const arrows = progressionIcon.querySelectorAll('.arrow-1, .arrow-2, .arrow-3');
+            console.log('Found arrows:', arrows.length);
+            
+            if (arrows.length > 0) {
+                // Reset all arrows to initial state
+                arrows.forEach((arrow, index) => {
+                    // Set initial position based on arrow class
+                    if (arrow.classList.contains('arrow-1')) {
+                        arrow.style.opacity = '0';
+                        arrow.style.transform = 'translateX(-30px) scale(0.8)';
+                    } else if (arrow.classList.contains('arrow-2')) {
+                        arrow.style.opacity = '0';
+                        arrow.style.transform = 'translate(-51.5px, 0) translateX(-30px) scale(0.8)';
+                    } else if (arrow.classList.contains('arrow-3')) {
+                        // Arrow-3 (leftmost) stays visible, don't reset it
+                        arrow.style.opacity = '1';
+                        arrow.style.transform = 'translate(-103px, 0) translateX(0) scale(1)';
+                    }
+                });
+                
+                // Animate arrows sequentially
+                // Arrow-3 (leftmost) is always visible, so animate arrow-2 first, then arrow-1
+                animateArrow(arrows[1], 100);   // Second arrow (middle) at 0.1s
+                animateArrow(arrows[0], 400);   // First arrow (rightmost) at 0.4s
+            }
+        }
+
         // Function to highlight active navigation link based on scroll position
         function setupActiveSectionHighlighting() {
             const sections = ['discover', 'research', 'solving', 'development'];
