@@ -12,6 +12,35 @@
     <link rel="canonical" href="http://kunalrathore.com/index.html">
     <link rel="stylesheet" href="assets/css/style.min.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome5.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        .page-projects {
+            padding: 20px 0;
+            min-height: 100vh;
+        }
+        
+        .page-contact {
+            min-height: 100vh;
+            padding-bottom: 20px;
+        }
+        
+        .nav-link {
+            color: #6c757d !important;
+            font-weight: 400;
+        }
+        
+        .nav-link.active {
+            color: #000000 !important;
+            font-weight: 500;
+        }
+        
+        .nav-link:hover {
+            color: #000000 !important;
+        }
+    </style>
 <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -28,20 +57,20 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarKunalPortFolio">
                 <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Contact</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="projects.html">Projects</a>
+                        <a class="nav-link" href="#projects">Projects</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
     <main role="main">
-        <div class="page-contact">
+        <div id="contact" class="page-contact">
             <div class="container">
-                <div class="row pb-lg-5">
+                <div class="row pb-2">
                     <div class="col-lg-3 offset-lg-1">
                         <br>
                         <br>
@@ -70,6 +99,60 @@
                 </div>
             </div>
         </div>
+        
+        <!-- Projects Section -->
+        <div id="projects" class="page-projects">
+            <div class="container">
+                <div class="row mb-2">
+                    <div class="col-lg-12 offset-lg-1">
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <a href="project-ficus-notes.html" class="text-dark project-thumb">
+                                    <img src="assets/img/projects/img-ficusnotes.png" class="img-fluid mb-2" alt="Ficus Notes">
+                                    <h5 class="font-weight-bold title">Ficus Notes</h5>
+                                    <p class="mb-5">2025 • iOS App • Productivity • AI</p>
+                                </a>
+                            </div>
+                            <div class="col-md-4 offset-lg-1 mb-4">
+                                <a href="project-battlepass-fvce.html" class="text-dark project-thumb">
+                                    <img src="assets/img/projects/img-battlepass.png" class="img-fluid mb-2" alt="FarmVille: Country Escape Battle Pass">
+                                    <h5 class="font-weight-bold title">FarmVille: Country Escape</h5>
+                                    <p class="mb-5">2023 • Mobile Game • UX Design • Battle Pass</p>
+                                </a>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <a href="project-understand-chess.html" class="text-dark project-thumb">
+                                    <img src="assets/img/projects/img-understand-chess.png" class="img-fluid mb-2" alt="Understand Chess Website">
+                                    <h5 class="font-weight-bold title">Understand Chess Website</h5>
+                                    <p class="mb-5">2019 • Website • E-learning • Chess</p>
+                                </a>
+                            </div>
+                            <div class="col-md-4 offset-lg-1 mb-4">
+                                <a href="https://kuns.medium.com/" class="text-dark project-thumb">
+                                    <img src="assets/img/projects/img-ux-articles.png" class="img-fluid mb-2" alt="UX Articles">
+                                    <h5 class="font-weight-bold title">UX Articles</h5>
+                                    <p class="mb-5">Blog • Medium • Articles</p>
+                                </a>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <a href="project-check-in-app.html" class="text-dark project-thumb">
+                                    <img src="assets/img/projects/img-event-checkin.png" class="img-fluid mb-2" alt="Event Check-In App">
+                                    <h5 class="font-weight-bold title">Event Check-In App</h5>
+                                    <p class="mb-5">2016 • Mobile App • Event Management • Hospitality</p>
+                                </a>
+                            </div>
+                            <div class="col-md-4 offset-lg-1 mb-4">
+                                <a href="projects-graphic.html" class="text-dark project-thumb">
+                                    <img src="assets/img/projects/img-graphic-projects.png" class="img-fluid mb-2" alt="Graphic Projects">
+                                    <h5 class="font-weight-bold title">Graphic Projects</h5>
+                                    <p class="mb-5">Visual • Print • Posters</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <!--<footer class="footer text-center">
             <div class="container">
@@ -86,5 +169,53 @@
     <script src="assets/js/main.js"></script>
     <!--Page Specific JS-->
     <script src="assets/js/pages/index.js"></script>
+    <script>
+        // Smooth scrolling and active navigation
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('.nav-link[href^="#"]');
+            const sections = document.querySelectorAll('section[id], div[id]');
+            
+            // Handle navigation clicks
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+            
+            // Update active navigation based on scroll position
+            function updateActiveNav() {
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    if (window.pageYOffset >= (sectionTop - 200)) {
+                        current = section.getAttribute('id');
+                    }
+                });
+                
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === '#' + current) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+            
+            // Listen for scroll events
+            window.addEventListener('scroll', updateActiveNav);
+            
+            // Set initial active state
+            updateActiveNav();
+        });
+    </script>
 </body>
 </html>
