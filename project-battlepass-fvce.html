@@ -176,6 +176,11 @@
             transform: translateX(-30px) scale(0.8);
             transition: all 0.6s ease-out;
         }
+        
+        /* Override page-content padding for this page */
+        .page-content {
+            padding-top: 0 !important;
+        }
     </style>
 <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -216,27 +221,39 @@
 
     <main role="main">
         <div class="page-content">
-            <div class="container">
-                <!-- Hero Section -->
-                <div class="row mb-5">
-                    <div class="col-12 col-lg-10 offset-lg-1">
-                        <h1 class="project-title mb-4">Battle Pass Feature – FarmVille: Country Escape</h1>
+            <!-- Hero Section -->
+            <div style="background-color: #000000; height: 100vh; display: flex; align-items: center; margin: 0 0 3rem 0;">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-lg-6">
+                            <img src="assets/img/projects/project-battlepass-fvce/zynga-t2-logo.png" alt="Zynga T2 Logo" style="max-width: 100%; height: auto; max-height: 80px; margin-bottom: 2rem;">
+                            <h1 style="color: #ffffff; font-family: Montserrat; font-size: 3rem; font-weight: 400; line-height: 1.2; margin-bottom: 1.5rem;">Battlepass</h1>
+                            <p style="color: #ffffff; font-family: Montserrat; font-size: 1.25rem; font-weight: 400; line-height: 1.6; margin-bottom: 0;">A progression-based reward system that drove sustained engagement and monetization in FarmVille: Country Escape.</p>
+                        </div>
+                        <div class="col-12 col-lg-6 text-center">
+                            <img src="assets/img/projects/project-battlepass-fvce/bp-mockup-hero-image.png" alt="Battle Pass Mockup" style="max-width: 100%; height: auto;">
+                        </div>
                     </div>
                 </div>
+            </div>
+            
+            <div class="container">
 
                 <!-- Project Description -->
                 <div class="row mb-5">
                     <div class="col-12 col-lg-10 offset-lg-1">
+                        <h2 class="mb-4" style="color: #000; font-family: Montserrat; font-size: 1.5rem; font-style: normal; font-weight: 400; line-height: normal;">A progression-based mechanic bringing consistent motivation and value to daily play</h2>
                         <div class="row align-items-center">
-                            <div class="col-12 col-md-7">
-                                <p class="lead mb-4 body-text" style="color: #3D3D3D; font-family: Montserrat; font-style: normal; font-weight: 400; line-height: 1.75rem;"><a href="https://farmville2ce.zyngaplay.com/" target="_blank" rel="noopener noreferrer" style="color: #3D3D3D; text-decoration: underline; font-weight: 400;">FarmVille: Country Escape</a> is one of Zynga's most popular mobile farming simulation games with over <strong>400,000 daily active users</strong>. To boost engagement and introduce a fresh monetization layer, the team launched the Battle Pass—a progression-based system widely used in free-to-play games. As the UX designer, I shaped the <strong>end-to-end player experience</strong>: defining task flows, designing reward communication, and ensuring seamless Unity integration. The feature became a top-performing addition, driving <strong>+20% ARPU, +7% engagement, and +12% daily retention</strong>, and earned internal recognition across Zynga studios for its success.</p>
+                            <div class="col-12 col-md-6">
+                                <p class="body-text" style="color: #3D3D3D; font-family: Montserrat; font-style: normal; font-weight: 400; line-height: 1.75rem; margin-bottom: 0;"><a href="https://farmville2ce.zyngaplay.com/" target="_blank" rel="noopener noreferrer" style="color: #3D3D3D; text-decoration: underline; font-weight: 400;">FarmVille: Country Escape</a> is one of Zynga's most popular mobile farming games with over <strong>400,000 daily players</strong>. To advance engagement and introduce a new monetization layer, the team launched the Battle Pass — a seasonal progression system that gave players structured goals and meaningful rewards. I led the UX design for the feature end-to-end, from defining player journeys to Unity implementation and live iterations.</p>
                             </div>
-                            <div class="col-12 col-md-5 text-center text-md-end d-flex align-items-start justify-content-end">
-                                <img src="assets/img/projects/project-battlepass-fvce/fvce-logo.png" alt="FarmVille: Country Escape Logo" style="max-width: 100%; height: auto; max-height: 150px;">
+                            <div class="col-12 col-md-6 text-center d-flex align-items-center justify-content-center">
+                                <img src="assets/img/projects/project-battlepass-fvce/bp-MysteryBox.png" alt="Mystery Box Icon" style="max-width: 100%; height: auto; max-height: 195px;">
                             </div>
                         </div>
                     </div>
                 </div>
+
 
                 <!-- Project Details Section -->
                 <div class="row mb-5" id="overview">
