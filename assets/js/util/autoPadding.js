@@ -1,1 +1,0 @@
-$.fn.autoPadding=function(n){var i={source:null},e=$(this);n&&jQuery.extend(i,n),$(this).css({paddingTop:i.source.innerHeight()+"px"}),$(window).resize(function(){e.css({paddingTop:i.source.innerHeight()+"px"})})};

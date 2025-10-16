@@ -3,13 +3,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Kunal Rathore">
     <meta name="keywords" content="UI/UX, UI Designer, UX Designer, User Interface, Designer">
     <meta name="description" content="An adaptable, well-versed designer who focuses on creating engaging and delightful experiences.">
     <meta name="robots" content="index, follow">
     <title>Kunal Rathore - UI/UX Designer</title>
-    <link rel="canonical" href="http://kunalrathore.com/index.html">
     <link rel="stylesheet" href="assets/css/style.min.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome5.css">
     <style>
@@ -77,7 +75,6 @@
             color: #007bff;
         }
         
-        /* Mobile responsiveness */
         @media (max-width: 768px) {
             .project-row .order-md-1,
             .project-row .order-md-2 {
@@ -103,7 +100,6 @@
 <body>
     <nav class="navbar navbar-expand-md navbar-light bg-white">
         <div class="container">
-            <!--<a class="navbar-brand" href="index.html">Kunal Rathore</a>-->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarKunalPortFolio" aria-controls="navbarKunalPortFolio" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -114,6 +110,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="writings.html">Writings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Products Launched</a>
                     </li>
                 </ul>
             </div>
@@ -224,48 +223,12 @@
             </div>
         </div>
     </main>
-    <!--<footer class="footer text-center">
-            <div class="container">
-                <p>© All rights Reserved</p>
-            </div>
-        </footer>-->
     <!-- Vendors JS -->
     <script src="assets/js/vendors/jquery.js"></script>
     <script src="assets/js/vendors/popper.js"></script>
     <script src="assets/js/vendors/bootstrap.js"></script>
-    <script src="assets/js/util/autoPadding.js"></script>
-    <script src="assets/js/util/crossPlatform.js"></script>
-    <script src="config.js"></script>
     <script src="assets/js/main.js"></script>
-    <!--Page Specific JS-->
-    <script src="assets/js/pages/index.js"></script>
     <script>
-        // Smooth scrolling and active navigation
-        document.addEventListener('DOMContentLoaded', function() {
-            const navLinks = document.querySelectorAll('.nav-link[href^="#"]');
-            
-            // Handle navigation clicks
-            navLinks.forEach(link => {
-                link.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const targetId = this.getAttribute('href').substring(1);
-                    const targetElement = document.getElementById(targetId);
-                    
-                    if (targetElement) {
-                        targetElement.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
-                        });
-                    }
-                });
-            });
-            
-            // Set projects link as active by default since it's the main section
-            const projectsLink = document.querySelector('.nav-link[href="#projects"]');
-            if (projectsLink) {
-                projectsLink.classList.add('active');
-            }
-        });
     </script>
 </body>
 </html>
