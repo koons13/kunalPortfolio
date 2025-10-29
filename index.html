@@ -31,15 +31,17 @@
         
         .nav-link:hover {
             color: #000000 !important;
+            text-decoration: underline !important;
         }
         
         /* Uniform spacing for navigation tabs */
-        .navbar-nav .nav-item {
-            margin-right: 2rem;
+        .navbar-nav {
+            display: flex !important;
+            gap: 2rem;
         }
         
-        .navbar-nav .nav-item:last-child {
-            margin-right: 0;
+        .navbar-nav .nav-item {
+            margin: 0;
         }
         
         /* Project Row Styling */

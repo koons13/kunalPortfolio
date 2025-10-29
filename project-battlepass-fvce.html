@@ -81,6 +81,32 @@
             background-color: #000;
         }
         
+        /* Navigation hover styles */
+        .nav-link {
+            color: #6c757d !important;
+            font-weight: 400;
+        }
+        
+        .nav-link.active {
+            color: #000000 !important;
+            font-weight: 500;
+        }
+        
+        .nav-link:hover {
+            color: #000000 !important;
+            text-decoration: underline !important;
+        }
+        
+        /* Uniform spacing for navigation tabs */
+        .navbar-nav {
+            display: flex !important;
+            gap: 2rem;
+        }
+        
+        .navbar-nav .nav-item {
+            margin: 0;
+        }
+        
         /* Battle Pass Project Styles */
         .battle-pass-card {
             transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -203,6 +229,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="writings.html">Writings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Products Launched</a>
                     </li>
                 </ul>
             </div>

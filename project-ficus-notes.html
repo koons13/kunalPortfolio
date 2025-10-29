@@ -71,6 +71,36 @@
             0%, 100% { transform: translateY(0px); }
             50% { transform: translateY(-10px); }
         }
+        
+        /* Navigation Styles */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        .nav-link {
+            color: #6c757d !important;
+            font-weight: 400;
+        }
+        
+        .nav-link.active {
+            color: #000000 !important;
+            font-weight: 500;
+        }
+        
+        .nav-link:hover {
+            color: #000000 !important;
+            text-decoration: underline !important;
+        }
+        
+        /* Uniform spacing for navigation tabs */
+        .navbar-nav {
+            display: flex !important;
+            gap: 2rem;
+        }
+        
+        .navbar-nav .nav-item {
+            margin: 0;
+        }
     </style>
 <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -93,6 +123,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="writings.html">Writings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Products Launched</a>
                     </li>
                 </ul>
             </div>
