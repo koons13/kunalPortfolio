@@ -50,37 +50,6 @@
             opacity: 1;
         }
         
-        /* Smooth scrolling for navigation links */
-        html {
-            scroll-behavior: smooth;
-        }
-        
-        /* Navigation hover effects */
-        .sticky-nav a:hover {
-            text-decoration: underline;
-        }
-        
-        /* Inactive navigation links - grey */
-        .sticky-nav a {
-            color: #777 !important;
-        }
-        
-        /* Active section highlighting with rectangle */
-        .sticky-nav a.active {
-            color: #000 !important;
-        }
-        
-        .sticky-nav a.active::after {
-            content: '';
-            position: absolute;
-            right: -12px;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 4px;
-            height: 16px;
-            background-color: #000;
-        }
-        
         /* Ficus Logo Animation Styles */
         #ellipse-1, #ellipse-2, #ellipse-3, #ellipse-4, #ellipse-5 {
             transition: d 2s ease-in-out;
@@ -129,16 +98,6 @@
             </div>
         </div>
     </nav>
-    <!-- Navigation Menu -->
-    <div class="sticky-nav" style="position: fixed; top: 50%; right: 20px; transform: translateY(-50%); z-index: 1000;">
-        <nav style="display: flex; flex-direction: column; gap: 0.75rem;">
-            <a href="#" style="color: #777; font-family: Montserrat; font-size: 0.75rem; text-decoration: none; padding: 0.25rem 0; transition: all 0.2s ease; position: relative; text-align: right;">Overview</a>
-            <a href="#discover" style="color: #777; font-family: Montserrat; font-size: 0.75rem; text-decoration: none; padding: 0.25rem 0; transition: all 0.2s ease; position: relative; text-align: right;">Discover</a>
-            <a href="#research" style="color: #777; font-family: Montserrat; font-size: 0.75rem; text-decoration: none; padding: 0.25rem 0; transition: all 0.2s ease; position: relative; text-align: right;">Research</a>
-            <a href="#solving" style="color: #777; font-family: Montserrat; font-size: 0.75rem; text-decoration: none; padding: 0.25rem 0; transition: all 0.2s ease; position: relative; text-align: right;">Solving</a>
-            <a href="#development" style="color: #777; font-family: Montserrat; font-size: 0.75rem; text-decoration: none; padding: 0.25rem 0; transition: all 0.2s ease; position: relative; text-align: right;">Development</a>
-        </nav>
-    </div>
 
     <main role="main">
         <div class="page-content" style="padding-top: 0 !important;">
@@ -812,78 +771,8 @@
                 observer.observe(infographicsSection);
             }
             
-            // Set up active section highlighting
-            setupActiveSectionHighlighting();
-            
             // Ficus logo animation is now handled by external script
-            
-            // Handle Overview link click to scroll to top
-            const overviewLink = document.querySelector('.sticky-nav a[href="#"]');
-            if (overviewLink) {
-                overviewLink.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    window.scrollTo({
-                        top: 0,
-                        behavior: 'smooth'
-                    });
-                });
-            }
         });
-        
-        // Function to highlight active navigation link based on scroll position
-        function setupActiveSectionHighlighting() {
-            const sections = ['discover', 'research', 'solving', 'development'];
-            const navLinks = document.querySelectorAll('.sticky-nav a');
-            
-            function updateActiveLink() {
-                let current = '';
-                const scrollPosition = window.scrollY + 100; // Offset for better UX
-                
-                // Check if we're before the Discover section (Overview area)
-                const discoverElement = document.getElementById('discover');
-                if (discoverElement && scrollPosition < discoverElement.offsetTop) {
-                    current = 'overview';
-                } else {
-                    // Find which section we're currently in
-                    for (let i = 0; i < sections.length; i++) {
-                        const currentSection = sections[i];
-                        const nextSection = sections[i + 1];
-                        
-                        const currentElement = document.getElementById(currentSection);
-                        const nextElement = nextSection ? document.getElementById(nextSection) : null;
-                        
-                        if (currentElement) {
-                            const currentSectionTop = currentElement.offsetTop;
-                            const nextSectionTop = nextElement ? nextElement.offsetTop : document.body.scrollHeight;
-                            
-                            // If we're in this section's range (from its start to the next section's start)
-                            if (scrollPosition >= currentSectionTop && scrollPosition < nextSectionTop) {
-                                current = currentSection;
-                                break;
-                            }
-                        }
-                    }
-                }
-                
-                // If we're past the last section, keep the last section active
-                if (scrollPosition >= document.getElementById('development').offsetTop) {
-                    current = 'development';
-                }
-                
-                navLinks.forEach(link => {
-                    link.classList.remove('active');
-                    if (link.getAttribute('href') === '#' + current || (current === 'overview' && link.getAttribute('href') === '#')) {
-                        link.classList.add('active');
-                    }
-                });
-            }
-            
-            // Update on scroll
-            window.addEventListener('scroll', updateActiveLink);
-            
-            // Initial call
-            updateActiveLink();
-        }
     </script>
 </body>
 </html>
