@@ -91,14 +91,28 @@ a:hover {
 /* Navigation links */
 .nav-link {
     color: var(--nav-link) !important;
+    font-weight: 400;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
 .nav-link.active {
     color: var(--nav-link-active) !important;
+    font-weight: 500;
 }
 
 .nav-link:hover {
     color: var(--nav-link-hover) !important;
+    text-decoration: underline !important;
+}
+
+/* Uniform spacing for navigation tabs */
+.navbar-nav {
+    display: flex !important;
+    gap: 2rem;
+}
+
+.navbar-nav .nav-item {
+    margin: 0;
 }
 
 /* Project cards and sections */
