@@ -25,14 +25,6 @@
             font-family: 'Montserrat', sans-serif;
         }
         
-        .zynga-hero {
-            position: relative;
-            padding: 150px 0 100px;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-        }
-        
         .zynga-title {
             color: var(--Portfolio-Primary-Color, #FFC130);
             font-family: 'Montserrat', sans-serif;
@@ -332,9 +324,9 @@
 
     <main role="main">
         <div class="page-content" style="padding-top: 0 !important;">
-            <!-- Hero Section -->
-            <div class="hero-section" style="min-height: 100vh; display: flex; align-items: center; margin-bottom: 5rem;">
-                <div class="container">
+            <div class="container">
+                <!-- Hero Section with Stats -->
+                <div class="mb-section">
                     <div class="row align-items-start">
                         <div class="col-12 col-lg-6 offset-lg-1">
                             <div style="position: relative; margin-bottom: 2rem;">
@@ -347,8 +339,9 @@
                             <p class="text-content zynga-body">Owned UX for live events, progression systems, and monetization flows in mobile farming game. Designed system-level interactions that influenced retention, engagement, and revenue.</p>
                         </div>
                     </div>
+                    
                     <!-- Project Details Section -->
-                    <div class="row mt-5">
+                    <div class="row">
                         <div class="col-12 col-lg-10 offset-lg-1">
                             <div class="project-details-section">
                                 <div class="d-flex flex-wrap justify-content-between">
@@ -385,9 +378,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            
-            <div class="container">
+
                 <!-- Product and Constraints Section -->
                 <div class="row mb-section align-items-center">
                     <div class="col-12 col-lg-6 offset-lg-1">
@@ -403,53 +394,48 @@
                         </ul>
                     </div>
                 </div>
-
-                <!-- Selected Projects Section -->
-                <div class="row mb-section">
-                    <div class="col-12 col-lg-10 offset-lg-1">
-                        <h2 class="text-heading-2 zynga-heading mb-4">Selected Projects</h2>
-                    </div>
-                </div>
                 
-                <!-- Battlepass Project -->
-                <div class="row mb-section align-items-center">
-                    <div class="col-12 col-lg-6 offset-lg-1">
-                        <img src="assets/img/projects/project-zynga/zynga-battlepass.png" alt="Battlepass" class="img-fluid" style="width: 100%; height: auto;">
+                <!-- Battlepass Project with Stats -->
+                <div class="mb-section">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-lg-6 offset-lg-1">
+                            <img src="assets/img/projects/project-zynga/zynga-battlepass.png" alt="Battlepass" class="img-fluid" style="width: 100%; height: auto;">
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <p class="text-content zynga-subtitle mb-4">Battlepass</p>
+                            <p class="text-content zynga-body mb-4">Built the Battle Pass, a progression based system that introduced structured goals, daily and long term tasks, and free and premium reward tracks. Designed task flows, reward communication, perk visibility, and the full player journey from entry to completion. Ensured the feature integrated cleanly with farming loops and communicated value without breaking balance.</p>
+                            <a href="project-battlepass-fvce.html" class="zynga-button">
+                                <span>Case Study</span>
+                                <span>→</span>
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-12 col-lg-4">
-                        <p class="text-content zynga-subtitle mb-4">Battlepass</p>
-                        <p class="text-content zynga-body mb-4">Built the Battle Pass, a progression based system that introduced structured goals, daily and long term tasks, and free and premium reward tracks. Designed task flows, reward communication, perk visibility, and the full player journey from entry to completion. Ensured the feature integrated cleanly with farming loops and communicated value without breaking balance.</p>
-                        <a href="project-battlepass-fvce.html" class="zynga-button">
-                            <span>Case Study</span>
-                            <span>→</span>
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- Stats for Battlepass -->
-                <div class="row mb-section">
-                    <div class="col-12 col-lg-10 offset-lg-1">
-                        <div class="project-details-section">
-                            <div class="d-flex flex-wrap justify-content-between">
-                                <div class="detail-item d-flex align-items-start mb-4">
-                                    <div class="detail-divider zynga-detail-divider"></div>
-                                    <div>
-                                        <p class="body-text-context mb-2 zynga-detail-value">20% ↑</p>
-                                        <h3 class="body-text text-primary mb-0 zynga-detail-header">ARPU Uptick</h3>
+                    
+                    <!-- Stats for Battlepass -->
+                    <div class="row">
+                        <div class="col-12 col-lg-10 offset-lg-1">
+                            <div class="project-details-section">
+                                <div class="d-flex flex-wrap justify-content-between">
+                                    <div class="detail-item d-flex align-items-start mb-4">
+                                        <div class="detail-divider zynga-detail-divider"></div>
+                                        <div>
+                                            <p class="body-text-context mb-2 zynga-detail-value">20% ↑</p>
+                                            <h3 class="body-text text-primary mb-0 zynga-detail-header">ARPU Uptick</h3>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="detail-item d-flex align-items-start mb-4">
-                                    <div class="detail-divider zynga-detail-divider"></div>
-                                    <div>
-                                        <p class="body-text-context mb-2 zynga-detail-value">7% ↑</p>
-                                        <h3 class="body-text text-primary mb-0 zynga-detail-header">Core Actions During the Season</h3>
+                                    <div class="detail-item d-flex align-items-start mb-4">
+                                        <div class="detail-divider zynga-detail-divider"></div>
+                                        <div>
+                                            <p class="body-text-context mb-2 zynga-detail-value">7% ↑</p>
+                                            <h3 class="body-text text-primary mb-0 zynga-detail-header">Core Actions During the Season</h3>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="detail-item d-flex align-items-start mb-4">
-                                    <div class="detail-divider zynga-detail-divider"></div>
-                                    <div>
-                                        <p class="body-text-context mb-2 zynga-detail-value">60%</p>
-                                        <h3 class="body-text text-primary mb-0 zynga-detail-header">Completion Rate Across the Full Progression</h3>
+                                    <div class="detail-item d-flex align-items-start mb-4">
+                                        <div class="detail-divider zynga-detail-divider"></div>
+                                        <div>
+                                            <p class="body-text-context mb-2 zynga-detail-value">60%</p>
+                                            <h3 class="body-text text-primary mb-0 zynga-detail-header">Completion Rate Across the Full Progression</h3>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -457,45 +443,47 @@
                     </div>
                 </div>
 
-                <!-- Seasonal Sale Project -->
-                <div class="row mb-section align-items-center">
-                    <div class="col-12 col-lg-6 offset-lg-1">
-                        <img src="assets/img/projects/project-zynga/zynga-seasonal-sale.png" alt="Seasonal Sale" class="img-fluid" style="width: 100%; height: auto;">
+                <!-- Seasonal Sale Project with Stats -->
+                <div class="mb-section">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-lg-6 offset-lg-1">
+                            <img src="assets/img/projects/project-zynga/zynga-seasonal-sale.png" alt="Seasonal Sale" class="img-fluid" style="width: 100%; height: auto;">
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <p class="text-content zynga-subtitle mb-4">Seasonal Sale</p>
+                            <p class="text-content zynga-body mb-4">Built a limited time reward track that shifted value from upfront purchase to ongoing play. Unlocking the sale gave access to the track, but rewards required completing actions and reaching XP milestones.</p>
+                            <a href="#" class="zynga-button">
+                                <span>Case Study</span>
+                                <span>→</span>
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-12 col-lg-4">
-                        <p class="text-content zynga-subtitle mb-4">Seasonal Sale</p>
-                        <p class="text-content zynga-body mb-4">Built a limited time reward track that shifted value from upfront purchase to ongoing play. Unlocking the sale gave access to the track, but rewards required completing actions and reaching XP milestones.</p>
-                        <a href="#" class="zynga-button">
-                            <span>Case Study</span>
-                            <span>→</span>
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- Stats for Seasonal Sale -->
-                <div class="row mb-section">
-                    <div class="col-12 col-lg-10 offset-lg-1">
-                        <div class="project-details-section">
-                            <div class="d-flex flex-wrap justify-content-between">
-                                <div class="detail-item d-flex align-items-start mb-4">
-                                    <div class="detail-divider zynga-detail-divider"></div>
-                                    <div>
-                                        <p class="body-text-context mb-2 zynga-detail-value">10% ↑</p>
-                                        <h3 class="body-text text-primary mb-0 zynga-detail-header">Revenue Uplift Without Affecting Baseline Systems</h3>
+                    
+                    <!-- Stats for Seasonal Sale -->
+                    <div class="row">
+                        <div class="col-12 col-lg-10 offset-lg-1">
+                            <div class="project-details-section">
+                                <div class="d-flex flex-wrap justify-content-between">
+                                    <div class="detail-item d-flex align-items-start mb-4">
+                                        <div class="detail-divider zynga-detail-divider"></div>
+                                        <div>
+                                            <p class="body-text-context mb-2 zynga-detail-value">10% ↑</p>
+                                            <h3 class="body-text text-primary mb-0 zynga-detail-header">Revenue Uplift Without Affecting Baseline Systems</h3>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="detail-item d-flex align-items-start mb-4">
-                                    <div class="detail-divider zynga-detail-divider"></div>
-                                    <div>
-                                        <p class="body-text-context mb-2 zynga-detail-value">12% ↑</p>
-                                        <h3 class="body-text text-primary mb-0 zynga-detail-header">Core Loop Actions for Purchasers</h3>
+                                    <div class="detail-item d-flex align-items-start mb-4">
+                                        <div class="detail-divider zynga-detail-divider"></div>
+                                        <div>
+                                            <p class="body-text-context mb-2 zynga-detail-value">12% ↑</p>
+                                            <h3 class="body-text text-primary mb-0 zynga-detail-header">Core Loop Actions for Purchasers</h3>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="detail-item d-flex align-items-start mb-4">
-                                    <div class="detail-divider zynga-detail-divider"></div>
-                                    <div>
-                                        <p class="body-text-context mb-2 zynga-detail-value">65%</p>
-                                        <h3 class="body-text text-primary mb-0 zynga-detail-header">Completion Rate for Purchasers</h3>
+                                    <div class="detail-item d-flex align-items-start mb-4">
+                                        <div class="detail-divider zynga-detail-divider"></div>
+                                        <div>
+                                            <p class="body-text-context mb-2 zynga-detail-value">65%</p>
+                                            <h3 class="body-text text-primary mb-0 zynga-detail-header">Completion Rate for Purchasers</h3>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -503,98 +491,54 @@
                     </div>
                 </div>
 
-                <!-- Web Store Project -->
-                <div class="row mb-section align-items-center">
-                    <div class="col-12 col-lg-6 offset-lg-1">
-                        <div class="row">
-                            <div class="col-6">
-                                <img src="assets/img/projects/project-zynga/zynga-webstore1.png" alt="MOTD Chest" class="img-fluid" style="width: 100%; height: auto; margin-bottom: 1.5rem;">
-                            </div>
-                            <div class="col-6">
-                                <img src="assets/img/projects/project-zynga/zynga-webstore2.png" alt="Daily Rewards" class="img-fluid" style="width: 100%; height: auto;">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-4">
-                        <p class="text-content zynga-subtitle mb-4">Web Store</p>
-                        <p class="text-content zynga-body mb-4">Legislation allowed a standalone web store but blocked direct in-game promotion. I designed a compliant flow that routed players from a daily reward claim to the web shop. Players collected a free chest on the site, saw discounted currency prices, and could purchase there. Web store purchases avoided the 30 percent platform fee, so even discounted packs delivered higher net revenue than in-app sales.</p>
-                        <a href="#" class="zynga-button">
-                            <span>Case Study</span>
-                            <span>→</span>
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- Stats for Web Store -->
-                <div class="row mb-section">
-                    <div class="col-12 col-lg-10 offset-lg-1">
-                        <div class="project-details-section">
-                            <div class="d-flex flex-wrap justify-content-between">
-                                <div class="detail-item d-flex align-items-start mb-4">
-                                    <div class="detail-divider zynga-detail-divider"></div>
-                                    <div>
-                                        <p class="body-text-context mb-2 zynga-detail-value">25% ↑</p>
-                                        <h3 class="body-text text-primary mb-0 zynga-detail-header">Click Through From Daily Reward Flow</h3>
-                                    </div>
+                <!-- Web Store Project with Stats -->
+                <div class="mb-section">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-lg-6 offset-lg-1">
+                            <div class="row">
+                                <div class="col-6">
+                                    <img src="assets/img/projects/project-zynga/zynga-webstore1.png" alt="MOTD Chest" class="img-fluid" style="width: 100%; height: auto; margin-bottom: 1.5rem;">
                                 </div>
-                                <div class="detail-item d-flex align-items-start mb-4">
-                                    <div class="detail-divider zynga-detail-divider"></div>
-                                    <div>
-                                        <p class="body-text-context mb-2 zynga-detail-value">32% ↑ (Month-Over-Month Increase)</p>
-                                        <h3 class="body-text text-primary mb-0 zynga-detail-header">Web Store Purchase Conversion</h3>
-                                    </div>
-                                </div>
-                                <div class="detail-item d-flex align-items-start mb-4">
-                                    <div class="detail-divider zynga-detail-divider"></div>
-                                    <div>
-                                        <p class="body-text-context mb-2 zynga-detail-value">15%</p>
-                                        <h3 class="body-text text-primary mb-0 zynga-detail-header">Higher Net Revenue Per Purchase</h3>
-                                    </div>
+                                <div class="col-6">
+                                    <img src="assets/img/projects/project-zynga/zynga-webstore2.png" alt="Daily Rewards" class="img-fluid" style="width: 100%; height: auto;">
                                 </div>
                             </div>
                         </div>
+                        <div class="col-12 col-lg-4">
+                            <p class="text-content zynga-subtitle mb-4">Web Store</p>
+                            <p class="text-content zynga-body mb-4">Legislation allowed a standalone web store but blocked direct in-game promotion. I designed a compliant flow that routed players from a daily reward claim to the web shop. Players collected a free chest on the site, saw discounted currency prices, and could purchase there. Web store purchases avoided the 30 percent platform fee, so even discounted packs delivered higher net revenue than in-app sales.</p>
+                            <a href="#" class="zynga-button">
+                                <span>Case Study</span>
+                                <span>→</span>
+                            </a>
+                        </div>
                     </div>
-                </div>
-
-                <!-- HUD Redesign Project -->
-                <div class="row mb-section align-items-center">
-                    <div class="col-12 col-lg-6 offset-lg-1">
-                        <img src="assets/img/projects/project-zynga/zynga-hud-redesign.png" alt="HUD Redesign" class="img-fluid" style="width: 100%; height: auto;">
-                    </div>
-                    <div class="col-12 col-lg-4">
-                        <p class="text-content zynga-subtitle mb-4">HUD Redesign</p>
-                        <p class="text-content zynga-body mb-4">Solved the long term HUD space shortage by unifying icon sizes, removing redundant entry points, and simplifying event icon states. Preserved player muscle memory while freeing space for upcoming features. Reduced cognitive load by cutting information bloat.</p>
-                        <a href="#" class="zynga-button">
-                            <span>Medium Article</span>
-                            <span>→</span>
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- Stats for HUD Redesign -->
-                <div class="row mb-section">
-                    <div class="col-12 col-lg-10 offset-lg-1">
-                        <div class="project-details-section">
-                            <div class="d-flex flex-wrap justify-content-between">
-                                <div class="detail-item d-flex align-items-start mb-4">
-                                    <div class="detail-divider zynga-detail-divider"></div>
-                                    <div>
-                                        <p class="body-text-context mb-2 zynga-detail-value">+ 3 ↑</p>
-                                        <h3 class="body-text text-primary mb-0 zynga-detail-header">HUD Slots Created Without Adding a New Row</h3>
+                    
+                    <!-- Stats for Web Store -->
+                    <div class="row">
+                        <div class="col-12 col-lg-10 offset-lg-1">
+                            <div class="project-details-section">
+                                <div class="d-flex flex-wrap justify-content-between">
+                                    <div class="detail-item d-flex align-items-start mb-4">
+                                        <div class="detail-divider zynga-detail-divider"></div>
+                                        <div>
+                                            <p class="body-text-context mb-2 zynga-detail-value">25% ↑</p>
+                                            <h3 class="body-text text-primary mb-0 zynga-detail-header">Click Through From Daily Reward Flow</h3>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="detail-item d-flex align-items-start mb-4">
-                                    <div class="detail-divider zynga-detail-divider"></div>
-                                    <div>
-                                        <p class="body-text-context mb-2 zynga-detail-value">20% ↑</p>
-                                        <h3 class="body-text text-primary mb-0 zynga-detail-header">Reduction in Icon-State Complexity for Events</h3>
+                                    <div class="detail-item d-flex align-items-start mb-4">
+                                        <div class="detail-divider zynga-detail-divider"></div>
+                                        <div>
+                                            <p class="body-text-context mb-2 zynga-detail-value">32% ↑ (Month-Over-Month Increase)</p>
+                                            <h3 class="body-text text-primary mb-0 zynga-detail-header">Web Store Purchase Conversion</h3>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="detail-item d-flex align-items-start mb-4">
-                                    <div class="detail-divider zynga-detail-divider"></div>
-                                    <div>
-                                        <p class="body-text-context mb-2 zynga-detail-value">0</p>
-                                        <h3 class="body-text text-primary mb-0 zynga-detail-header">CS Tickets After Rollout</h3>
+                                    <div class="detail-item d-flex align-items-start mb-4">
+                                        <div class="detail-divider zynga-detail-divider"></div>
+                                        <div>
+                                            <p class="body-text-context mb-2 zynga-detail-value">15%</p>
+                                            <h3 class="body-text text-primary mb-0 zynga-detail-header">Higher Net Revenue Per Purchase</h3>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -602,42 +546,92 @@
                     </div>
                 </div>
 
-                <!-- Experiments Project -->
-                <div class="row mb-section align-items-center">
-                    <div class="col-12 col-lg-6 offset-lg-1">
-                        <img src="assets/img/projects/project-zynga/zynga-experiments.png" alt="Experiments" class="img-fluid" style="width: 100%; height: auto;">
+                <!-- HUD Redesign Project with Stats -->
+                <div class="mb-section">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-lg-6 offset-lg-1">
+                            <img src="assets/img/projects/project-zynga/zynga-hud-redesign.png" alt="HUD Redesign" class="img-fluid" style="width: 100%; height: auto;">
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <p class="text-content zynga-subtitle mb-4">HUD Redesign</p>
+                            <p class="text-content zynga-body mb-4">Solved the long term HUD space shortage by unifying icon sizes, removing redundant entry points, and simplifying event icon states. Preserved player muscle memory while freeing space for upcoming features. Reduced cognitive load by cutting information bloat.</p>
+                            <a href="#" class="zynga-button">
+                                <span>Medium Article</span>
+                                <span>→</span>
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-12 col-lg-4">
-                        <p class="text-content zynga-subtitle mb-4">Experiments</p>
-                        <p class="text-content zynga-body mb-4">Explored automating tooltip to take players directly to next action.</p>
-                        <p class="text-content zynga-body">Hypothesis: Directing players to the next actionable step would reduce cognitive overhead in dense sessions.</p>
+                    
+                    <!-- Stats for HUD Redesign -->
+                    <div class="row">
+                        <div class="col-12 col-lg-10 offset-lg-1">
+                            <div class="project-details-section">
+                                <div class="d-flex flex-wrap justify-content-between">
+                                    <div class="detail-item d-flex align-items-start mb-4">
+                                        <div class="detail-divider zynga-detail-divider"></div>
+                                        <div>
+                                            <p class="body-text-context mb-2 zynga-detail-value">+ 3 ↑</p>
+                                            <h3 class="body-text text-primary mb-0 zynga-detail-header">HUD Slots Created Without Adding a New Row</h3>
+                                        </div>
+                                    </div>
+                                    <div class="detail-item d-flex align-items-start mb-4">
+                                        <div class="detail-divider zynga-detail-divider"></div>
+                                        <div>
+                                            <p class="body-text-context mb-2 zynga-detail-value">20% ↑</p>
+                                            <h3 class="body-text text-primary mb-0 zynga-detail-header">Reduction in Icon-State Complexity for Events</h3>
+                                        </div>
+                                    </div>
+                                    <div class="detail-item d-flex align-items-start mb-4">
+                                        <div class="detail-divider zynga-detail-divider"></div>
+                                        <div>
+                                            <p class="body-text-context mb-2 zynga-detail-value">0</p>
+                                            <h3 class="body-text text-primary mb-0 zynga-detail-header">CS Tickets After Rollout</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                
-                <!-- Stats for Experiments -->
-                <div class="row mb-section">
-                    <div class="col-12 col-lg-10 offset-lg-1">
-                        <div class="project-details-section">
-                            <div class="d-flex flex-wrap justify-content-between">
-                                <div class="detail-item d-flex align-items-start mb-4">
-                                    <div class="detail-divider zynga-detail-divider"></div>
-                                    <div>
-                                        <p class="body-text-context mb-2 zynga-detail-value">8% ↓</p>
-                                        <h3 class="body-text text-primary mb-0 zynga-detail-header">Engagement Drop on Experiment Group</h3>
+
+                <!-- Experiments Project with Stats -->
+                <div class="mb-section">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-lg-6 offset-lg-1">
+                            <img src="assets/img/projects/project-zynga/zynga-experiments.png" alt="Experiments" class="img-fluid" style="width: 100%; height: auto;">
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <p class="text-content zynga-subtitle mb-4">Experiments</p>
+                            <p class="text-content zynga-body mb-4">Explored automating tooltip to take players directly to next action.</p>
+                            <p class="text-content zynga-body">Hypothesis: Directing players to the next actionable step would reduce cognitive overhead in dense sessions.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Stats for Experiments -->
+                    <div class="row">
+                        <div class="col-12 col-lg-10 offset-lg-1">
+                            <div class="project-details-section">
+                                <div class="d-flex flex-wrap justify-content-between">
+                                    <div class="detail-item d-flex align-items-start mb-4">
+                                        <div class="detail-divider zynga-detail-divider"></div>
+                                        <div>
+                                            <p class="body-text-context mb-2 zynga-detail-value">8% ↓</p>
+                                            <h3 class="body-text text-primary mb-0 zynga-detail-header">Engagement Drop on Experiment Group</h3>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="detail-item d-flex align-items-start mb-4">
-                                    <div class="detail-divider zynga-detail-divider"></div>
-                                    <div>
-                                        <p class="body-text-context mb-2 zynga-detail-value">Feature was paused as it reduced agency within the loop.</p>
-                                        <h3 class="body-text text-primary mb-0 zynga-detail-header">Outcome</h3>
+                                    <div class="detail-item d-flex align-items-start mb-4">
+                                        <div class="detail-divider zynga-detail-divider"></div>
+                                        <div>
+                                            <p class="body-text-context mb-2 zynga-detail-value">Feature was paused as it reduced agency within the loop.</p>
+                                            <h3 class="body-text text-primary mb-0 zynga-detail-header">Outcome</h3>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="detail-item d-flex align-items-start mb-4">
-                                    <div class="detail-divider zynga-detail-divider"></div>
-                                    <div>
-                                        <p class="body-text-context mb-2 zynga-detail-value">Removing cognitive burden must not remove the player's role in the loop</p>
-                                        <h3 class="body-text text-primary mb-0 zynga-detail-header">Insight</h3>
+                                    <div class="detail-item d-flex align-items-start mb-4">
+                                        <div class="detail-divider zynga-detail-divider"></div>
+                                        <div>
+                                            <p class="body-text-context mb-2 zynga-detail-value">Removing cognitive burden must not remove the player's role in the loop</p>
+                                            <h3 class="body-text text-primary mb-0 zynga-detail-header">Insight</h3>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
