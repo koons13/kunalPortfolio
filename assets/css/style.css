@@ -723,8 +723,8 @@ pre code {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+  margin-right: -10px;
+  margin-left: -10px;
 }
 
 /* line 55, node_modules/bootstrap/scss/_grid.scss */
@@ -750,8 +750,8 @@ pre code {
 .col-xxl-auto {
   position: relative;
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 /* line 34, node_modules/bootstrap/scss/mixins/_grid-framework.scss */
@@ -6497,8 +6497,8 @@ input[type="button"].btn-block {
     -webkit-box-direction: normal;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
-    margin-right: -15px;
-    margin-left: -15px;
+    margin-right: -10px;
+    margin-left: -10px;
   }
   /* line 165, node_modules/bootstrap/scss/_card.scss */
   .card-deck .card {
@@ -14527,13 +14527,13 @@ hr.persona-line {
 
 /* Grid spacing improvements */
 .row {
-  margin-left: -15px;
-  margin-right: -15px;
+  margin-left: -10px;
+  margin-right: -10px;
 }
 
 .row > * {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 /* ============================================
@@ -14606,6 +14606,47 @@ hr.persona-line {
   line-height: normal;
 }
 
+/* Typography - Text Classes */
+.text-heading-1 {
+  font-family: Montserrat;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  color: #FFF;
+}
+
+.text-heading-2 {
+  font-family: Montserrat;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  color: #FFF;
+  font-feature-settings: 'liga' off, 'clig' off;
+}
+
+.text-heading-3 {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+  color: #FFF;
+}
+
+.text-content {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 200% */
+  color: #FFF;
+}
+
 /* Typography - Colors */
 .text-primary {
   color: #000;
@@ -14663,15 +14704,15 @@ hr.persona-line {
 
 /* Spacing - Margins */
 .mb-section {
-  margin-bottom: 3rem;
-}
-
-.mb-section-lg {
   margin-bottom: 5rem;
 }
 
+.mb-section-lg {
+  margin-bottom: 7rem;
+}
+
 .mb-section-xl {
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
 }
 
 .mb-content {

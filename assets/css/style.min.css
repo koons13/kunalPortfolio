@@ -723,8 +723,8 @@ pre code {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+  margin-right: -10px;
+  margin-left: -10px;
 }
 
 /* line 55, node_modules/bootstrap/scss/_grid.scss */
@@ -750,8 +750,8 @@ pre code {
 .col-xxl-auto {
   position: relative;
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 /* line 34, node_modules/bootstrap/scss/mixins/_grid-framework.scss */
@@ -6497,8 +6497,8 @@ input[type="button"].btn-block {
     -webkit-box-direction: normal;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
-    margin-right: -15px;
-    margin-left: -15px;
+    margin-right: -10px;
+    margin-left: -10px;
   }
   /* line 165, node_modules/bootstrap/scss/_card.scss */
   .card-deck .card {
@@ -14527,11 +14527,23 @@ hr.persona-line {
 
 /* Grid spacing improvements */
 .row {
-  margin-left: -15px;
-  margin-right: -15px;
+  margin-left: -10px;
+  margin-right: -10px;
 }
 
 .row > * {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.mb-section {
+  margin-bottom: 5rem;
+}
+
+.mb-section-lg {
+  margin-bottom: 7rem;
+}
+
+.mb-section-xl {
+  margin-bottom: 6rem;
 }
