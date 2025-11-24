@@ -282,10 +282,21 @@ h4[style] {
 
 /* Tables */
 table {
-    background: var(--table-bg);
+    background: var(--table-bg) !important;
+}
+
+table[style*="background: #fff"],
+table[style*="background:#fff"],
+table[style*="background: #ffffff"] {
+    background: var(--table-bg) !important;
 }
 
 table thead tr {
+    background: var(--table-header-bg) !important;
+}
+
+table thead tr[style*="background: #F8F8F8"],
+table thead tr[style*="background:#F8F8F8"] {
     background: var(--table-header-bg) !important;
 }
 
@@ -293,9 +304,26 @@ table tbody tr:nth-child(even) {
     background: var(--table-bg-alt) !important;
 }
 
+table tbody tr[style*="background: #FAFAFA"],
+table tbody tr[style*="background:#FAFAFA"] {
+    background: var(--table-bg-alt) !important;
+}
+
 table th,
 table td {
     border-color: var(--border-light) !important;
+    color: var(--text-secondary) !important;
+}
+
+table th[style*="color: #000"],
+table th[style*="color:#000"],
+table th[style*="color: #000000"] {
+    color: var(--text-primary) !important;
+}
+
+table td[style*="color: #000"],
+table td[style*="color:#000"],
+table td[style*="color: #000000"] {
     color: var(--text-secondary) !important;
 }
 
