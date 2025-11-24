@@ -35,36 +35,6 @@
             0%, 100% { transform: translateY(0px); }
             50% { transform: translateY(-10px); }
         }
-        
-        /* Navigation Styles */
-        html {
-            scroll-behavior: smooth;
-        }
-        
-        .nav-link {
-            color: #6c757d !important;
-            font-weight: 400;
-        }
-        
-        .nav-link.active {
-            color: #000000 !important;
-            font-weight: 500;
-        }
-        
-        .nav-link:hover {
-            color: #000000 !important;
-            text-decoration: underline !important;
-        }
-        
-        /* Uniform spacing for navigation tabs */
-        .navbar-nav {
-            display: flex !important;
-            gap: 2rem;
-        }
-        
-        .navbar-nav .nav-item {
-            margin: 0;
-        }
     </style>
 <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -104,14 +74,14 @@
     <main role="main">
         <div class="page-content" style="padding-top: 0 !important;">
             <!-- Hero Section -->
-            <div style="background-color: #000000; height: 100vh; display: flex; align-items: center; margin: 0 0 5rem 0;">
+            <div class="hero-section" style="margin-bottom: 5rem;">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-12 col-lg-4 offset-lg-1 text-center">
-                            <img src="assets/img/projects/project-ficus-notes/ficus preview.gif" alt="Ficus Notes Preview" style="max-width: 100%; height: auto;">
+                            <img src="assets/img/projects/project-ficus-notes/ficus preview.gif" alt="Ficus Notes Preview" class="img-fluid">
                         </div>
                         <div class="col-12 col-lg-5 offset-lg-0">
-                            <h1 style="color: #ffffff; font-family: Montserrat; font-size: 3rem; font-weight: 400; line-height: 1.2; margin-bottom: 0;">AI-powered notes app that makes staying organized feel effortless.</h1>
+                            <h1 class="text-hero text-white mb-0">AI-powered notes app that makes staying organized feel effortless.</h1>
                         </div>
                     </div>
                 </div>
@@ -119,62 +89,62 @@
             
             <div class="container">
                 <!-- Project Title Section -->
-                <div class="row" style="margin-bottom: 3rem;">
+                <div class="row mb-section">
                     <div class="col-12 col-lg-10 offset-lg-1">
                         <h1 class="project-title mb-4">Ficus Notes</h1>
                     </div>
                 </div>
 
                 <!-- Project Description -->
-                <div class="row" style="margin-bottom: 3rem;">
+                <div class="row mb-section">
                     <div class="col-12 col-lg-10 offset-lg-1">
                         <div class="row align-items-center">
                             <div class="col-12 col-md-7">
-                                <p class="lead mb-4 body-text" style="color: #3D3D3D; font-family: Montserrat; font-style: normal; font-weight: 400; line-height: 1.75rem;">Managing notes often means endless folders, tags, and manual sorting. To solve this, a notes app was designed and launched that leverages AI to auto-categorise notes into folders, lists, and schedules helping users stay organised without the extra effort.</p>
-                                <p class="body-text mb-4" style="color: #3D3D3D; font-family: Montserrat; font-style: normal; font-weight: 400; line-height: 1.75rem;">With built-in intelligence, the app adapts to personal workflows, ensuring notes are always structured, searchable, and actionable.</p>
-                                <p class="body-text" style="color: #3D3D3D; font-family: Montserrat; font-style: normal; font-weight: 400; line-height: 1.75rem;">
-                                    Product Website - <a href="https://ficusnotes.com" target="_blank" rel="noopener noreferrer" style="color: #3D3D3D; text-decoration: underline; font-weight: 400;">ficusnotes.com</a> | 
-                                    <a href="https://apps.apple.com/in/app/ficus-notes/id6745206831" target="_blank" rel="noopener noreferrer" style="color: #3D3D3D; text-decoration: underline; font-weight: 400;">App Store</a>
+                                <p class="lead mb-4 body-text-secondary">Managing notes often means endless folders, tags, and manual sorting. To solve this, a notes app was designed and launched that leverages AI to auto-categorise notes into folders, lists, and schedules helping users stay organised without the extra effort.</p>
+                                <p class="body-text-secondary mb-4">With built-in intelligence, the app adapts to personal workflows, ensuring notes are always structured, searchable, and actionable.</p>
+                                <p class="body-text-secondary">
+                                    Product Website - <a href="https://ficusnotes.com" target="_blank" rel="noopener noreferrer" class="text-dark-gray" style="text-decoration: underline;">ficusnotes.com</a> | 
+                                    <a href="https://apps.apple.com/in/app/ficus-notes/id6745206831" target="_blank" rel="noopener noreferrer" class="text-dark-gray" style="text-decoration: underline;">App Store</a>
                                 </p>
                             </div>
                             <div class="col-12 col-md-5 text-center text-md-end">
-                                <img src="assets/img/projects/project-ficus-notes/Ficus-Logo.svg" alt="Ficus Notes Logo" style="max-width: 16.0625rem; height: auto; width: 100%;">
+                                <img src="assets/img/projects/project-ficus-notes/Ficus-Logo.svg" alt="Ficus Notes Logo" class="img-fluid" style="max-width: 16.0625rem;">
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Project Details Section -->
-                <div class="row" style="margin-bottom: 5rem;" id="overview">
+                <div class="row mb-section-lg" id="overview">
                     <div class="col-12 col-lg-10 offset-lg-1">
-                        <div class="project-details-section" style="padding: 3rem 0;">
+                        <div class="project-details-section">
                             <div class="d-flex flex-wrap justify-content-between">
-                                <div class="detail-item d-flex align-items-start mb-4" style="flex: 0 0 18%; min-width: 200px;">
-                                    <div style="width: 0.125rem; height: 2.3125rem; flex-shrink: 0; background: #D9D9D9; margin-right: 1rem;"></div>
+                                <div class="detail-item d-flex align-items-start mb-4">
+                                    <div class="detail-divider"></div>
                                     <div>
-                                        <h3 class="body-text" style="color: #000; font-family: Montserrat; font-style: normal; font-weight: 400; line-height: 1.75rem; margin-bottom: 0.5rem;">Overview</h3>
-                                        <p style="color: var(--Context-Text, #777); font-family: Montserrat; font-size: 0.875rem; font-style: normal; font-weight: 400; line-height: 1.75rem; margin-bottom: 0;">iOS - available<br>macOS - in development</p>
+                                        <h3 class="body-text text-primary mb-2">Overview</h3>
+                                        <p class="body-text-context mb-0">iOS - available<br>macOS - in development</p>
                                     </div>
                                 </div>
-                                <div class="detail-item d-flex align-items-start mb-4" style="flex: 0 0 18%; min-width: 200px;">
-                                    <div style="width: 0.125rem; height: 2.3125rem; flex-shrink: 0; background: #D9D9D9; margin-right: 1rem;"></div>
+                                <div class="detail-item d-flex align-items-start mb-4">
+                                    <div class="detail-divider"></div>
                                     <div>
-                                        <h3 class="body-text" style="color: #000; font-family: Montserrat; font-style: normal; font-weight: 400; line-height: 1.75rem; margin-bottom: 0.5rem;">Timeline</h3>
-                                        <p style="color: var(--Context-Text, #777); font-family: Montserrat; font-size: 0.875rem; font-style: normal; font-weight: 400; line-height: 1.75rem; margin-bottom: 0;">Mar-Sep 2025</p>
+                                        <h3 class="body-text text-primary mb-2">Timeline</h3>
+                                        <p class="body-text-context mb-0">Mar-Sep 2025</p>
                                     </div>
                                 </div>
-                                <div class="detail-item d-flex align-items-start mb-4" style="flex: 0 0 18%; min-width: 200px;">
-                                    <div style="width: 0.125rem; height: 2.3125rem; flex-shrink: 0; background: #D9D9D9; margin-right: 1rem;"></div>
+                                <div class="detail-item d-flex align-items-start mb-4">
+                                    <div class="detail-divider"></div>
                                     <div>
-                                        <h3 class="body-text" style="color: #000; font-family: Montserrat; font-style: normal; font-weight: 400; line-height: 1.75rem; margin-bottom: 0.5rem;">Tools</h3>
-                                        <p style="color: var(--Context-Text, #777); font-family: Montserrat; font-size: 0.875rem; font-style: normal; font-weight: 400; line-height: 1.75rem; margin-bottom: 0;">Figma, Xcode, ChatGPT</p>
+                                        <h3 class="body-text text-primary mb-2">Tools</h3>
+                                        <p class="body-text-context mb-0">Figma, Xcode, ChatGPT</p>
                                     </div>
                                 </div>
-                                <div class="detail-item d-flex align-items-start mb-4" style="flex: 0 0 18%; min-width: 200px;">
-                                    <div style="width: 0.125rem; height: 2.3125rem; flex-shrink: 0; background: #D9D9D9; margin-right: 1rem;"></div>
+                                <div class="detail-item d-flex align-items-start mb-4">
+                                    <div class="detail-divider"></div>
                                     <div>
-                                        <h3 class="body-text" style="color: #000; font-family: Montserrat; font-style: normal; font-weight: 400; line-height: 1.75rem; margin-bottom: 0.5rem;">Role</h3>
-                                        <p style="color: var(--Context-Text, #777); font-family: Montserrat; font-size: 0.875rem; font-style: normal; font-weight: 400; line-height: 1.75rem; margin-bottom: 0;">Solo project</p>
+                                        <h3 class="body-text text-primary mb-2">Role</h3>
+                                        <p class="body-text-context mb-0">Solo project</p>
                                     </div>
                                 </div>
                             </div>
@@ -183,31 +153,31 @@
                 </div>
 
                 <!-- Discover Section -->
-                <div class="row" style="margin-bottom: 3rem;" id="discover">
+                <div class="row mb-section" id="discover">
                     <div class="col-12 col-lg-10 offset-lg-1">
                         <div class="section-wrapper">
-                            <h2 class="mb-4" style="color: var(--Ficus, #007AFF); font-family: Montserrat; font-size: 1.5rem; font-style: normal; font-weight: 400; line-height: normal;">Discover</h2>
-                            <h3 class="mb-4" style="color: #000; font-family: Montserrat; font-size: 3rem; font-style: normal; font-weight: 400; line-height: normal;">Friction erodes intrinsic motivation</h3>
+                            <h2 class="mb-4 text-section-label text-accent font-montserrat">Discover</h2>
+                            <h3 class="mb-4 text-section-title text-primary font-montserrat">Friction erodes intrinsic motivation</h3>
                         </div>
                     </div>
                 </div>
-                <div class="row" style="margin-bottom: 3rem;">
+                <div class="row mb-section">
                     <div class="col-12 col-lg-5 offset-lg-1">
-                        <p class="body-text mb-4" style="color: #000; font-family: Montserrat; font-style: normal; font-weight: 400; line-height: 1.75rem;">During a user interview for a project, the participant shared their screen to demonstrate their workflow. At one point, they needed to reference a book and opened their chat to self and searched there. When asked how they usually manage their "to-be-read" list, they explained it was spread across different places a notes app, Google Keep, occasionally Goodreads, and often WhatsApp.</p>
-                        <p class="body-text mb-4" style="color: #000; font-family: Montserrat; font-style: normal; font-weight: 400; line-height: 1.75rem;">This fragmentation isn't inefficiency—it's an adaptive response. Users rarely abandon tools because they lack features; they abandon them when the cognitive cost of maintaining structure exceeds the motivational reward. According to Self-Determination Theory, sustained engagement requires autonomy, competence, and low cognitive friction.</p>
-                        <p class="body-text" style="color: #000; font-family: Montserrat; font-style: normal; font-weight: 400; line-height: 1.75rem;">This observation prompted an inquiry into how motivational friction shapes note-taking behavior.</p>
+                        <p class="body-text mb-4">During a user interview for a project, the participant shared their screen to demonstrate their workflow. At one point, they needed to reference a book and opened their chat to self and searched there. When asked how they usually manage their "to-be-read" list, they explained it was spread across different places a notes app, Google Keep, occasionally Goodreads, and often WhatsApp.</p>
+                        <p class="body-text mb-4">This fragmentation isn't inefficiency—it's an adaptive response. Users rarely abandon tools because they lack features; they abandon them when the cognitive cost of maintaining structure exceeds the motivational reward. According to Self-Determination Theory, sustained engagement requires autonomy, competence, and low cognitive friction.</p>
+                        <p class="body-text">This observation prompted an inquiry into how motivational friction shapes note-taking behavior.</p>
                     </div>
                     <div class="col-12 col-lg-4 offset-lg-1">
                         <div>
-                            <img src="assets/img/projects/project-ficus-notes/research-whatsapp.png" alt="WhatsApp chat showing shopping list" style="max-width: 100%; height: auto; margin-bottom: 1rem;">
-                            <p style="color: #777; font-family: Montserrat; font-size: 0.875rem; font-style: normal; font-weight: 400; line-height: 1.5rem; margin-bottom: 0; text-align: left;">Using chat to self for shopping list</p>
+                            <img src="assets/img/projects/project-ficus-notes/research-whatsapp.png" alt="WhatsApp chat showing shopping list" class="img-fluid mb-3">
+                            <p class="body-text-context mb-0">Using chat to self for shopping list</p>
                         </div>
                     </div>
                 </div>
-                <div class="row" style="margin-bottom: 5rem;">
+                <div class="row mb-section-lg">
                     <div class="col-12 col-lg-10 offset-lg-1">
-                        <div class="d-flex justify-content-center align-items-center p-3 rounded mb-4" style="background: #F1F1F1; min-height: 5.5625rem;">
-                            <p class="text-center mb-0" style="color: #000; font-family: Montserrat; font-size: 1.5rem; font-style: normal; font-weight: 500; line-height: normal;">Fragmentation reflects autonomy; convenience preserves self-efficacy</p>
+                        <div class="highlight-box">
+                            <p class="text-center mb-0 text-quote text-primary">Fragmentation reflects autonomy; convenience preserves self-efficacy</p>
                         </div>
                     </div>
                 </div>

@@ -51,12 +51,7 @@
             opacity: 1;
         }
         
-        /* Smooth scrolling for navigation links */
-        html {
-            scroll-behavior: smooth;
-        }
-        
-        /* Navigation hover effects */
+        /* Sticky Navigation - Project Specific */
         .sticky-nav a:hover {
             text-decoration: underline;
         }
@@ -80,32 +75,6 @@
             width: 4px;
             height: 16px;
             background-color: #000;
-        }
-        
-        /* Navigation hover styles */
-        .nav-link {
-            color: #6c757d !important;
-            font-weight: 400;
-        }
-        
-        .nav-link.active {
-            color: #000000 !important;
-            font-weight: 500;
-        }
-        
-        .nav-link:hover {
-            color: #000000 !important;
-            text-decoration: underline !important;
-        }
-        
-        /* Uniform spacing for navigation tabs */
-        .navbar-nav {
-            display: flex !important;
-            gap: 2rem;
-        }
-        
-        .navbar-nav .nav-item {
-            margin: 0;
         }
         
         /* Battle Pass Project Styles */
@@ -204,10 +173,6 @@
             transition: all 0.6s ease-out;
         }
         
-        /* Override page-content padding for this page */
-        .page-content {
-            padding-top: 0 !important;
-        }
     </style>
 <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -257,66 +222,66 @@
     <main role="main">
         <div class="page-content">
             <!-- Hero Section -->
-            <div style="background-color: #000000; height: 100vh; display: flex; align-items: center; margin: 0 0 3rem 0;">
+            <div class="hero-section">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-12 col-lg-6">
-                            <img src="assets/img/projects/project-battlepass-fvce/zynga-t2-logo.png" alt="Zynga T2 Logo" style="max-width: 100%; height: auto; max-height: 80px; margin-bottom: 2rem;">
-                            <h1 style="color: #ffffff; font-family: Montserrat; font-size: 3rem; font-weight: 400; line-height: 1.2; margin-bottom: 1.5rem;">Battlepass</h1>
-                            <p style="color: #ffffff; font-family: Montserrat; font-size: 1.25rem; font-weight: 400; line-height: 1.6; margin-bottom: 0;">A progression-based reward system that drove sustained engagement and monetization in FarmVille: Country Escape.</p>
+                            <img src="assets/img/projects/project-battlepass-fvce/zynga-t2-logo.png" alt="Zynga T2 Logo" class="img-fluid" style="max-height: 80px; margin-bottom: 2rem;">
+                            <h1 class="text-hero text-white mb-4">Battlepass</h1>
+                            <p class="text-white font-montserrat" style="font-size: 1.25rem; font-weight: 400; line-height: 1.6; margin-bottom: 0;">A progression-based reward system that drove sustained engagement and monetization in FarmVille: Country Escape.</p>
                         </div>
                         <div class="col-12 col-lg-6 text-center">
-                            <img src="assets/img/projects/project-battlepass-fvce/bp-mockup-hero-image.png" alt="Battle Pass Mockup" style="max-width: 100%; height: auto;">
+                            <img src="assets/img/projects/project-battlepass-fvce/bp-mockup-hero-image.png" alt="Battle Pass Mockup" class="img-fluid">
                         </div>
                     </div>
                 </div>
             </div>
             
             <!-- Project Description - Full Page -->
-            <div style="background-color: #ffffff; height: 100vh; display: flex; align-items: center; margin: 0 0 1rem 0;">
+            <div class="hero-section-white">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-12 col-lg-10 offset-lg-1">
-                            <h2 class="mb-4" style="color: #000; font-family: Montserrat; font-size: 2.5rem; font-style: normal; font-weight: 400; line-height: normal;">A progression-based mechanic bringing consistent motivation and value to daily play</h2>
-                            <p style="color: #777; font-family: Montserrat; font-size: 0.875rem; font-style: italic; font-weight: 400; line-height: 1.5rem; margin-bottom: 1.5rem;">This is an abridged process presentation due to NDA requirements.</p>
+                            <h2 class="mb-4 text-heading-lg text-primary font-montserrat">A progression-based mechanic bringing consistent motivation and value to daily play</h2>
+                            <p class="text-secondary font-montserrat text-body-xs" style="font-style: italic; margin-bottom: 1.5rem;">This is an abridged process presentation due to NDA requirements.</p>
                             <div class="row align-items-center mb-5">
                                 <div class="col-12 col-md-6">
-                                    <p class="body-text" style="color: #3D3D3D; font-family: Montserrat; font-style: normal; font-weight: 400; line-height: 1.75rem; margin-bottom: 0;"><a href="https://farmville2ce.zyngaplay.com/" target="_blank" rel="noopener noreferrer" style="color: #3D3D3D; text-decoration: underline; font-weight: 400;">FarmVille: Country Escape</a> is one of Zynga's most popular mobile farming games with over <strong>400,000 daily players</strong>. To advance engagement and introduce a new monetization layer, the team launched the Battle Pass — a seasonal progression system that gave players structured goals and meaningful rewards. I led the UX design for the feature end-to-end, from defining player journeys to Unity implementation and live iterations.</p>
+                                    <p class="body-text-secondary mb-0"><a href="https://farmville2ce.zyngaplay.com/" target="_blank" rel="noopener noreferrer" class="text-dark-gray" style="text-decoration: underline;">FarmVille: Country Escape</a> is one of Zynga's most popular mobile farming games with over <strong>400,000 daily players</strong>. To advance engagement and introduce a new monetization layer, the team launched the Battle Pass — a seasonal progression system that gave players structured goals and meaningful rewards. I led the UX design for the feature end-to-end, from defining player journeys to Unity implementation and live iterations.</p>
                                 </div>
                                 <div class="col-12 col-md-6 text-center d-flex align-items-center justify-content-center">
-                                    <img src="assets/img/projects/project-battlepass-fvce/bp-MysteryBox.png" alt="Mystery Box Icon" style="max-width: 100%; height: auto; max-height: 195px;">
+                                    <img src="assets/img/projects/project-battlepass-fvce/bp-MysteryBox.png" alt="Mystery Box Icon" class="img-fluid" style="max-height: 195px;">
                                 </div>
                             </div>
                             
                             <!-- Project Details Section -->
                             <div class="project-details-section" style="padding: 2rem 0 0 0; margin: 0;" id="overview">
                                 <div class="d-flex flex-wrap justify-content-between">
-                                    <div class="detail-item d-flex align-items-start mb-4" style="flex: 0 0 18%; min-width: 200px;">
-                                        <div style="width: 0.125rem; height: 2.3125rem; flex-shrink: 0; background: #D9D9D9; margin-right: 1rem;"></div>
+                                    <div class="detail-item d-flex align-items-start mb-4">
+                                        <div class="detail-divider"></div>
                                         <div>
-                                            <h3 class="body-text" style="color: #000; font-family: Montserrat; font-style: normal; font-weight: 400; line-height: 1.75rem; margin-bottom: 0.5rem;">Release</h3>
-                                            <p style="color: var(--Context-Text, #777); font-family: Montserrat; font-size: 0.875rem; font-style: normal; font-weight: 400; line-height: 1.75rem; margin-bottom: 0;">March 2023</p>
+                                            <h3 class="body-text text-primary mb-2">Release</h3>
+                                            <p class="body-text-context mb-0">March 2023</p>
                                         </div>
                                     </div>
-                                    <div class="detail-item d-flex align-items-start mb-4" style="flex: 0 0 18%; min-width: 200px;">
-                                        <div style="width: 0.125rem; height: 2.3125rem; flex-shrink: 0; background: #D9D9D9; margin-right: 1rem;"></div>
+                                    <div class="detail-item d-flex align-items-start mb-4">
+                                        <div class="detail-divider"></div>
                                         <div>
-                                            <h3 class="body-text" style="color: #000; font-family: Montserrat; font-style: normal; font-weight: 400; line-height: 1.75rem; margin-bottom: 0.5rem;">Tools</h3>
-                                            <p style="color: var(--Context-Text, #777); font-family: Montserrat; font-size: 0.875rem; font-style: normal; font-weight: 400; line-height: 1.75rem; margin-bottom: 0;">Figma, Unity</p>
+                                            <h3 class="body-text text-primary mb-2">Tools</h3>
+                                            <p class="body-text-context mb-0">Figma, Unity</p>
                                         </div>
                                     </div>
-                                    <div class="detail-item d-flex align-items-start mb-4" style="flex: 0 0 18%; min-width: 200px;">
-                                        <div style="width: 0.125rem; height: 2.3125rem; flex-shrink: 0; background: #D9D9D9; margin-right: 1rem;"></div>
+                                    <div class="detail-item d-flex align-items-start mb-4">
+                                        <div class="detail-divider"></div>
                                         <div>
-                                            <h3 class="body-text" style="color: #000; font-family: Montserrat; font-style: normal; font-weight: 400; line-height: 1.75rem; margin-bottom: 0.5rem;">My Role</h3>
-                                            <p style="color: var(--Context-Text, #777); font-family: Montserrat; font-size: 0.875rem; font-style: normal; font-weight: 400; line-height: 1.75rem; margin-bottom: 0;">Interaction Design, User Flows, Prototyping, User Interviews, Integration</p>
+                                            <h3 class="body-text text-primary mb-2">My Role</h3>
+                                            <p class="body-text-context mb-0">Interaction Design, User Flows, Prototyping, User Interviews, Integration</p>
                                         </div>
                                     </div>
-                                    <div class="detail-item d-flex align-items-start mb-4" style="flex: 0 0 18%; min-width: 200px;">
-                                        <div style="width: 0.125rem; height: 2.3125rem; flex-shrink: 0; background: #D9D9D9; margin-right: 1rem;"></div>
+                                    <div class="detail-item d-flex align-items-start mb-4">
+                                        <div class="detail-divider"></div>
                                         <div>
-                                            <h3 class="body-text" style="color: #000; font-family: Montserrat; font-style: normal; font-weight: 400; line-height: 1.75rem; margin-bottom: 0.5rem;">Cross-Collaboration</h3>
-                                            <p style="color: var(--Context-Text, #777); font-family: Montserrat; font-size: 0.875rem; font-style: normal; font-weight: 400; line-height: 1.75rem; margin-bottom: 0;">Game Design, UX Design, Product, Art, Engineering, Analytics, Producer, QA</p>
+                                            <h3 class="body-text text-primary mb-2">Cross-Collaboration</h3>
+                                            <p class="body-text-context mb-0">Game Design, UX Design, Product, Art, Engineering, Analytics, Producer, QA</p>
                                         </div>
                                     </div>
                                 </div>
@@ -329,23 +294,23 @@
             <div class="container">
 
                 <!-- CE Screenshot Section - Full Width -->
-                <div style="width: 100vw; margin-left: calc(-50vw + 50%); margin-bottom: 3rem;">
-                    <img src="assets/img/projects/project-battlepass-fvce/CE-screenshot.png" alt="FarmVille: Country Escape Screenshot" style="width: 100%; height: auto; display: block;">
+                <div class="full-width-image">
+                    <img src="assets/img/projects/project-battlepass-fvce/CE-screenshot.png" alt="FarmVille: Country Escape Screenshot">
                 </div>
 
                 <!-- Challenge & Objectives Section -->
                 <div class="row mb-5" id="discover">
                     <div class="col-12 col-lg-10 offset-lg-1">
-                        <div class="section-wrapper" style="padding: 2rem 0; margin: 2rem 0 0 0;">
-                            <h2 class="mb-4" style="color: var(--Ficus, #007AFF); font-family: Montserrat; font-size: 1.5rem; font-style: normal; font-weight: 400; line-height: normal;">Objective</h2>
-                            <h3 class="mb-4" style="color: #000; font-family: Montserrat; font-size: 3rem; font-style: normal; font-weight: 400; line-height: normal;">Design a system for Consistent Engagement</h3>
+                        <div class="section-wrapper-spaced">
+                            <h2 class="mb-4 text-section-label text-accent font-montserrat">Objective</h2>
+                            <h3 class="mb-4 text-section-title text-primary font-montserrat">Design a system for Consistent Engagement</h3>
                         </div>
                     </div>
                 </div>
                 <div class="row mb-5">
                     <div class="col-12 col-lg-6 offset-lg-1">
-                        <p class="body-text mb-4" style="color: #000; font-family: Montserrat; font-style: normal; font-weight: 400; line-height: 1.75rem;">While events drove short bursts of play, there was no system encouraging <strong>consistent long-term engagement</strong>. Players lacked ongoing goals and incentives beyond short-term rewards.</p>
-                        <p class="body-text" style="color: #000; font-family: Montserrat; font-style: normal; font-weight: 400; line-height: 1.75rem; margin-bottom: 0;">The Battle Pass was designed to provide structured progression and meaningful rewards for players.</p>
+                        <p class="body-text mb-4">While events drove short bursts of play, there was no system encouraging <strong>consistent long-term engagement</strong>. Players lacked ongoing goals and incentives beyond short-term rewards.</p>
+                        <p class="body-text mb-0">The Battle Pass was designed to provide structured progression and meaningful rewards for players.</p>
                     </div>
                 </div>
                 <!-- Objectives Icons Section -->
@@ -422,23 +387,23 @@
                 <!-- Research Section -->
                 <div class="row mb-5" id="research">
                     <div class="col-12 col-lg-10 offset-lg-1">
-                        <div class="section-wrapper" style="padding: 2rem 0 0 0; margin: 0;">
-                            <h2 class="mb-4" style="color: var(--Ficus, #007AFF); font-family: Montserrat; font-size: 1.5rem; font-style: normal; font-weight: 400; line-height: normal;">Research</h2>
-                            <h3 class="mb-4" style="color: #000; font-family: Montserrat; font-size: 3rem; font-style: normal; font-weight: 400; line-height: normal;">Understanding player behavior and needs</h3>
+                        <div class="section-wrapper">
+                            <h2 class="mb-4 text-section-label text-accent font-montserrat">Research</h2>
+                            <h3 class="mb-4 text-section-title text-primary font-montserrat">Understanding player behavior and needs</h3>
                         </div>
                     </div>
                 </div>
 
                 <div class="row mb-5">
                     <div class="col-12 col-lg-6 offset-lg-1">
-                        <p class="body-text" style="color: #000; font-family: Montserrat; font-style: normal; font-weight: 400; line-height: 1.75rem;">I studied battle passes across <strong>shooters, RPGs, and strategy games</strong> to extract design principles that could work for a casual farming simulation, understanding what made them engaging and sustainable.</p>
+                        <p class="body-text">I studied battle passes across <strong>shooters, RPGs, and strategy games</strong> to extract design principles that could work for a casual farming simulation, understanding what made them engaging and sustainable.</p>
                     </div>
                 </div>
 
                 <!-- Process Steps Section -->
                 <div class="row mb-5">
                     <div class="col-12 col-lg-10 offset-lg-1">
-                        <h3 class="mb-4" style="color: #000; font-family: Montserrat; font-size: 3rem; font-style: normal; font-weight: 400; line-height: normal;">Battle Pass System</h3>
+                        <h3 class="mb-4 text-section-title text-primary font-montserrat">Battle Pass System</h3>
                     </div>
                 </div>
 
@@ -505,17 +470,17 @@
                 <!-- Solving Section -->
                 <div class="row mb-5" id="solving">
                     <div class="col-12 col-lg-10 offset-lg-1">
-                        <div class="section-wrapper" style="padding: 2rem 0 0 0; margin: 0;">
-                            <h2 class="mb-4" style="color: var(--Ficus, #007AFF); font-family: Montserrat; font-size: 1.5rem; font-style: normal; font-weight: 400; line-height: normal;">Solving</h2>
-                            <h3 class="mb-4" style="color: #000; font-family: Montserrat; font-size: 3rem; font-style: normal; font-weight: 400; line-height: normal;">UI/UX Design</h3>
+                        <div class="section-wrapper">
+                            <h2 class="mb-4 text-section-label text-accent font-montserrat">Solving</h2>
+                            <h3 class="mb-4 text-section-title text-primary font-montserrat">UI/UX Design</h3>
                         </div>
                     </div>
                 </div>
                 <div class="row mb-5">
                     <div class="col-12 col-lg-6 offset-lg-1">
-                        <p class="body-text mb-4" style="color: #000; font-family: Montserrat; font-style: normal; font-weight: 400; line-height: 1.75rem;">Designed intuitive task flows that integrated seamlessly with existing game mechanics while providing clear progression feedback.</p>
-                        <p class="body-text mb-4" style="color: #000; font-family: Montserrat; font-style: normal; font-weight: 400; line-height: 1.75rem;">Created compelling reward communication that highlighted both immediate and long-term value for players.</p>
-                        <p class="body-text" style="color: #000; font-family: Montserrat; font-style: normal; font-weight: 400; line-height: 1.75rem;">Ensured premium perks felt valuable without making free players feel excluded from core progression.</p>
+                        <p class="body-text mb-4">Designed intuitive task flows that integrated seamlessly with existing game mechanics while providing clear progression feedback.</p>
+                        <p class="body-text mb-4">Created compelling reward communication that highlighted both immediate and long-term value for players.</p>
+                        <p class="body-text">Ensured premium perks felt valuable without making free players feel excluded from core progression.</p>
                     </div>
                 </div>
 
@@ -598,8 +563,8 @@
                 <!-- Development Section -->
                 <div class="row mb-5" id="development">
                     <div class="col-12 col-lg-10 offset-lg-1">
-                        <div class="section-wrapper" style="padding: 2rem 0 0 0; margin: 0;">
-                            <h2 class="mb-4" style="color: var(--Ficus, #007AFF); font-family: Montserrat; font-size: 1.5rem; font-style: normal; font-weight: 400; line-height: normal;">Unity Integration</h2>
+                        <div class="section-wrapper">
+                            <h2 class="mb-4 text-section-label text-accent font-montserrat">Unity Integration</h2>
                         </div>
                     </div>
                 </div>
@@ -607,20 +572,20 @@
                 <!-- Unity Integration Section -->
                 <div class="row mb-5">
                     <div class="col-12 col-lg-10 offset-lg-1">
-                        <h3 class="mb-4" style="color: #000; font-family: Montserrat; font-size: 3rem; font-style: normal; font-weight: 400; line-height: normal;">Unity Integration</h3>
+                        <h3 class="mb-4 text-section-title text-primary font-montserrat">Unity Integration</h3>
                     </div>
                 </div>
                 <div class="row mb-5">
                     <div class="col-12 col-lg-6 offset-lg-1">
-                        <p class="body-text mb-4" style="color: #000; font-family: Montserrat; font-style: normal; font-weight: 400; line-height: 1.75rem;">Worked closely with Unity developers to implement the Battle Pass system, ensuring smooth integration with existing game mechanics and performance optimization.</p>
-                        <p class="body-text mb-4" style="color: #000; font-family: Montserrat; font-style: normal; font-weight: 400; line-height: 1.75rem;">Designed flexible reward and progression systems that could be easily configured and updated for different seasons and events.</p>
-                        <p class="body-text" style="color: #000; font-family: Montserrat; font-style: normal; font-weight: 400; line-height: 1.75rem;">Created comprehensive design documentation and specifications for the development team, including user flows, interaction patterns, and visual guidelines.</p>
+                        <p class="body-text mb-4">Worked closely with Unity developers to implement the Battle Pass system, ensuring smooth integration with existing game mechanics and performance optimization.</p>
+                        <p class="body-text mb-4">Designed flexible reward and progression systems that could be easily configured and updated for different seasons and events.</p>
+                        <p class="body-text">Created comprehensive design documentation and specifications for the development team, including user flows, interaction patterns, and visual guidelines.</p>
                     </div>
                     <div class="col-12 col-lg-4">
                         <div class="text-center">
-                            <img src="assets/img/projects/project-battlepass-fvce/UI-tasks.png" alt="Battle Pass Tasks UI" style="width: 100%; height: auto; border-radius: 0.5rem; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); margin-bottom: 1rem;">
-                            <img src="assets/img/projects/project-battlepass-fvce/UI-rewards.png" alt="Battle Pass Rewards UI" style="width: 100%; height: auto; border-radius: 0.5rem; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); margin-bottom: 1rem;">
-                            <img src="assets/img/projects/project-battlepass-fvce/UI-Perks.png" alt="Battle Pass Perks UI" style="width: 100%; height: auto; border-radius: 0.5rem; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+                            <img src="assets/img/projects/project-battlepass-fvce/UI-tasks.png" alt="Battle Pass Tasks UI" class="img-fluid mb-3" style="border-radius: 0.5rem; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+                            <img src="assets/img/projects/project-battlepass-fvce/UI-rewards.png" alt="Battle Pass Rewards UI" class="img-fluid mb-3" style="border-radius: 0.5rem; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+                            <img src="assets/img/projects/project-battlepass-fvce/UI-Perks.png" alt="Battle Pass Perks UI" class="img-fluid" style="border-radius: 0.5rem; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
                         </div>
                     </div>
                 </div>
@@ -630,12 +595,12 @@
                 <!-- Results & Impact Section -->
                 <div class="row mb-5">
                     <div class="col-12 col-lg-10 offset-lg-1">
-                        <h3 class="mb-4" style="color: #000; font-family: Montserrat; font-size: 3rem; font-style: normal; font-weight: 400; line-height: normal;">Outcome</h3>
+                        <h3 class="mb-4 text-section-title text-primary font-montserrat">Outcome</h3>
                     </div>
                 </div>
                 <div class="row mb-5">
                     <div class="col-12 col-lg-10 offset-lg-1">
-                        <p class="body-text mb-5" style="color: #000; font-family: Montserrat; font-style: normal; font-weight: 400; line-height: 1.75rem;">The Battle Pass feature successfully launched and became a core retention mechanic for FarmVille: Country Escape, providing players with structured progression and meaningful rewards. The implementation exceeded expectations across key performance indicators, demonstrating strong player adoption and sustained engagement throughout the season.</p>
+                        <p class="body-text mb-5">The Battle Pass feature successfully launched and became a core retention mechanic for FarmVille: Country Escape, providing players with structured progression and meaningful rewards. The implementation exceeded expectations across key performance indicators, demonstrating strong player adoption and sustained engagement throughout the season.</p>
                     </div>
                 </div>
 

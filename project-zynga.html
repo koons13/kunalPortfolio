@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Kunal Rathore">
+    <meta name="keywords" content="UI/UX, UI Designer, UX Designer, User Interface, Designer">
+    <meta name="description" content="An adaptable, well-versed designer who focuses on creating engaging and delightful experiences.">
+    <meta name="robots" content="index, follow">
+    <title>Kunal Rathore - Zynga Projects - Country Escape</title>
+    <link rel="canonical" href="http://kunalrathore.com/project-zynga.html">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome5.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <style>
+        body {
+            background-color: #000000;
+            color: #ffffff;
+        }
+        
+        .zynga-page {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .zynga-hero {
+            position: relative;
+            padding: 150px 0 100px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+        
+        .zynga-title {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            font-size: 3rem;
+            line-height: 1.2;
+            color: #FFC130;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+        }
+        
+        .zynga-subtitle {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            font-size: 1.25rem;
+            line-height: 1.6;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 1.5rem;
+        }
+        
+        .zynga-body {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            font-size: 0.875rem;
+            line-height: 1.75rem;
+            color: #ffffff;
+        }
+        
+        .zynga-heading {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            font-size: 3rem;
+            line-height: normal;
+            color: #ffffff;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+        }
+        
+        .zynga-section {
+            padding: 2rem 0;
+        }
+        
+        .zynga-project-title {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            font-size: 3rem;
+            line-height: normal;
+            color: #ffffff;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+        }
+        
+        .zynga-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 12px;
+        }
+        
+        .zynga-tag-circle {
+            width: 18px;
+            height: 18px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            flex-shrink: 0;
+        }
+        
+        .zynga-tag-badge {
+            background-color: #FFC130;
+            color: #000000;
+            padding: 3px 20px;
+            border-radius: 3px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+        
+        .zynga-button {
+            background-color: #ffffff;
+            color: #000000;
+            border: none;
+            padding: 4px 20px;
+            border-radius: 4px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+            display: inline-flex;
+            align-items: center;
+            gap: 20px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .zynga-button:hover {
+            background-color: #FFC130;
+            color: #000000;
+            text-decoration: none;
+        }
+        
+        .zynga-stat {
+            margin-bottom: 1.5rem;
+        }
+        
+        .zynga-stat-value {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            font-size: 2.5rem;
+            line-height: normal;
+            color: #FFC130;
+            text-transform: uppercase;
+            letter-spacing: -0.2px;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 0.75rem;
+        }
+        
+        .zynga-stat-label {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            font-size: 0.875rem;
+            line-height: 1.5rem;
+            color: #ffffff;
+            text-transform: capitalize;
+        }
+        
+        .zynga-phone-mockup {
+            position: relative;
+            transform: rotate(270deg);
+        }
+        
+        .zynga-image-container {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .zynga-image-container img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        
+        .zynga-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .zynga-list li {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            font-size: 0.875rem;
+            line-height: 1.75rem;
+            color: #ffffff;
+            margin-bottom: 1.5rem;
+            padding-left: 21px;
+            position: relative;
+        }
+        
+        .zynga-list li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+        }
+        
+        .zynga-tools-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .zynga-tool-item {
+            text-align: center;
+        }
+        
+        .zynga-tool-item img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 1.5rem;
+        }
+        
+        .zynga-interviews-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .zynga-interview-item {
+            text-align: center;
+        }
+        
+        .zynga-interview-item img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .zynga-heading {
+                font-size: 2rem;
+            }
+            
+            .zynga-title {
+                font-size: 2rem;
+            }
+            
+            .zynga-project-title {
+                font-size: 2rem;
+            }
+            
+            .zynga-tools-grid,
+            .zynga-interviews-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .nav-link {
+            color: #6c757d !important;
+            font-weight: 400;
+        }
+        
+        .nav-link.active {
+            color: #000000 !important;
+            font-weight: 500;
+        }
+        
+        .nav-link:hover {
+            color: #000000 !important;
+            text-decoration: underline !important;
+        }
+        
+        .navbar-nav {
+            display: flex !important;
+            gap: 2rem;
+        }
+        
+        .navbar-nav .nav-item {
+            margin: 0;
+        }
+    </style>
+<link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="mask-icon" href="safari-pinned-tab.svg" color="#3d3d3d">
+<meta name="msapplication-TileColor" content="#2b5797">
+<meta name="theme-color" content="#ffffff">
+</head>
+<body class="zynga-page">
+    <nav class="navbar navbar-expand-md navbar-light bg-white">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarKunalPortFolio" aria-controls="navbarKunalPortFolio" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarKunalPortFolio">
+                <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Case studies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="writings.html">Writings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Products Launched</a>
+                    </li>
+                    <li class="nav-item">
+                        <button id="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode" title="Toggle dark mode">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main role="main">
+        <div class="page-content" style="padding-top: 0 !important;">
+            <!-- Hero Section -->
+            <div style="background-color: #000000; min-height: 100vh; display: flex; align-items: center; margin: 0 0 3rem 0;">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-lg-6">
+                            <div style="position: relative; margin-bottom: 2rem;">
+                                <img src="assets/img/projects/project-zynga/zynga-cover.png" alt="Country Escape" class="img-fluid" style="width: 100%; height: auto;">
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <h1 class="zynga-title">Country Escape</h1>
+                            <p class="zynga-subtitle">UI/UX Designer | 2021-2024</p>
+                            <p class="zynga-body">Owned UX for live events, progression systems, and monetization flows in mobile farming game. Designed system-level interactions that influenced retention, engagement, and revenue.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container">
+                <!-- Product and Constraints Section -->
+                <div class="row mb-5 align-items-center">
+                    <div class="col-12 col-lg-10 offset-lg-1">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-md-6">
+                                <img src="assets/img/projects/project-zynga/Zynga-product-context.png" alt="Farm Design" class="img-fluid" style="width: 100%; height: auto;">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <h2 class="zynga-project-title">Product and Constraints</h2>
+                                <ul class="zynga-list">
+                                    <li>Senior-age majority player base required slower pacing and high-legibility UI.</li>
+                                    <li>Aging tech stack limited layout flexibility and animation behavior.</li>
+                                    <li>Diverse player motivations required reward pacing that worked for collectors, achievers, and grinders.</li>
+                                    <li>Economy inflation and balance rules constrained progression and reward communication.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Selected Projects Section -->
+                <div class="row mb-5">
+                    <div class="col-12 col-lg-10 offset-lg-1">
+                        <h2 class="zynga-heading">Selected Projects</h2>
+                    </div>
+                </div>
+                
+                <!-- Battlepass Project -->
+                <div class="row mb-5 align-items-center">
+                    <div class="col-12 col-lg-10 offset-lg-1">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-md-6">
+                                <img src="assets/img/projects/project-zynga/zynga-battlepass.png" alt="Battlepass" class="img-fluid" style="width: 100%; height: auto;">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <h3 class="zynga-project-title">Battlepass</h3>
+                                <p class="zynga-body">Built the Battle Pass, a progression based system that introduced structured goals, daily and long term tasks, and free and premium reward tracks. Designed task flows, reward communication, perk visibility, and the full player journey from entry to completion. Ensured the feature integrated cleanly with farming loops and communicated value without breaking balance.</p>
+                                <a href="project-battlepass-fvce.html" class="zynga-button">
+                                    <span>Case Study</span>
+                                    <span>→</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Stats for Battlepass -->
+                <div class="row mb-5">
+                    <div class="col-12 col-lg-10 offset-lg-1">
+                        <div class="row">
+                            <div class="col-12 col-md-4">
+                                <div class="zynga-stat">
+                                    <div class="zynga-stat-value">
+                                        <span>20%</span>
+                                        <span>↑</span>
+                                    </div>
+                                    <div class="zynga-stat-label">ARPU uptick</div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="zynga-stat">
+                                    <div class="zynga-stat-value">
+                                        <span>7%</span>
+                                        <span>↑</span>
+                                    </div>
+                                    <div class="zynga-stat-label">core actions during the season</div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="zynga-stat">
+                                    <div class="zynga-stat-value">
+                                        <span>60%</span>
+                                    </div>
+                                    <div class="zynga-stat-label">completion rate across the full progression</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Seasonal Sale Project -->
+                <div class="row mb-5 align-items-center">
+                    <div class="col-12 col-lg-10 offset-lg-1">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-md-6">
+                                <img src="assets/img/projects/project-zynga/zynga-seasonal-sale.png" alt="Seasonal Sale" class="img-fluid" style="width: 100%; height: auto;">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <h3 class="zynga-project-title">Seasonal Sale</h3>
+                                <p class="zynga-body">Built a limited time reward track that shifted value from upfront purchase to ongoing play. Unlocking the sale gave access to the track, but rewards required completing actions and reaching XP milestones.</p>
+                                <a href="#" class="zynga-button">
+                                    <span>Case Study</span>
+                                    <span>→</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Stats for Seasonal Sale -->
+                <div class="row mb-5">
+                    <div class="col-12 col-lg-10 offset-lg-1">
+                        <div class="row">
+                            <div class="col-12 col-md-4">
+                                <div class="zynga-stat">
+                                    <div class="zynga-stat-value">
+                                        <span>10%</span>
+                                        <span>↑</span>
+                                    </div>
+                                    <div class="zynga-stat-label">Revenue uplift without affecting Baseline Systems</div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="zynga-stat">
+                                    <div class="zynga-stat-value">
+                                        <span>12%</span>
+                                        <span>↑</span>
+                                    </div>
+                                    <div class="zynga-stat-label">Core loop actions for purchasers</div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="zynga-stat">
+                                    <div class="zynga-stat-value">
+                                        <span>65%</span>
+                                    </div>
+                                    <div class="zynga-stat-label">Completion rate for purchasers</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web Store Project -->
+                <div class="row mb-5 align-items-center">
+                    <div class="col-12 col-lg-10 offset-lg-1">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-md-6">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <img src="assets/img/projects/project-zynga/zynga-webstore1.png" alt="MOTD Chest" class="img-fluid" style="width: 100%; height: auto; margin-bottom: 1.5rem;">
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="assets/img/projects/project-zynga/zynga-webstore2.png" alt="Daily Rewards" class="img-fluid" style="width: 100%; height: auto;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <h3 class="zynga-project-title">Web Store</h3>
+                                <p class="zynga-body">Legislation allowed a standalone web store but blocked direct in-game promotion. I designed a compliant flow that routed players from a daily reward claim to the web shop. Players collected a free chest on the site, saw discounted currency prices, and could purchase there. Web store purchases avoided the 30 percent platform fee, so even discounted packs delivered higher net revenue than in-app sales.</p>
+                                <a href="#" class="zynga-button">
+                                    <span>Case Study</span>
+                                    <span>→</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Stats for Web Store -->
+                <div class="row mb-5">
+                    <div class="col-12 col-lg-10 offset-lg-1">
+                        <div class="row">
+                            <div class="col-12 col-md-4">
+                                <div class="zynga-stat">
+                                    <div class="zynga-stat-value">
+                                        <span>25%</span>
+                                        <span>↑</span>
+                                    </div>
+                                    <div class="zynga-stat-label">Click Through From Daily Reward Flow</div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="zynga-stat">
+                                    <div class="zynga-stat-value">
+                                        <span>32%</span>
+                                        <span>↑</span>
+                                    </div>
+                                    <div class="zynga-stat-label">Web Store Purchase Conversion (Month-Over-Month Increase)</div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="zynga-stat">
+                                    <div class="zynga-stat-value">
+                                        <span>15%</span>
+                                    </div>
+                                    <div class="zynga-stat-label">Higher Net Revenue Per Purchase</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HUD Redesign Project -->
+                <div class="row mb-5 align-items-center">
+                    <div class="col-12 col-lg-10 offset-lg-1">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-md-6">
+                                <img src="assets/img/projects/project-zynga/zynga-hud-redesign.png" alt="HUD Redesign" class="img-fluid" style="width: 100%; height: auto;">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <h3 class="zynga-project-title">HUD Redesign</h3>
+                                <p class="zynga-body" style="font-size: 1.125rem;">Solved the long term HUD space shortage by unifying icon sizes, removing redundant entry points, and simplifying event icon states. Preserved player muscle memory while freeing space for upcoming features. Reduced cognitive load by cutting information bloat.</p>
+                                <a href="#" class="zynga-button">
+                                    <span>Medium Article</span>
+                                    <span>→</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Stats for HUD Redesign -->
+                <div class="row mb-5">
+                    <div class="col-12 col-lg-10 offset-lg-1">
+                        <div class="row">
+                            <div class="col-12 col-md-4">
+                                <div class="zynga-stat">
+                                    <div class="zynga-stat-value">
+                                        <span>+ 3</span>
+                                        <span>↑</span>
+                                    </div>
+                                    <div class="zynga-stat-label">HUD slots created without adding a new row</div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="zynga-stat">
+                                    <div class="zynga-stat-value">
+                                        <span>20%</span>
+                                        <span>↑</span>
+                                    </div>
+                                    <div class="zynga-stat-label">20 percent reduction in icon-state complexity for events</div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="zynga-stat">
+                                    <div class="zynga-stat-value">
+                                        <span>0</span>
+                                    </div>
+                                    <div class="zynga-stat-label">CS tickets after rollout</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experiments Project -->
+                <div class="row mb-5 align-items-center">
+                    <div class="col-12 col-lg-10 offset-lg-1">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-md-6">
+                                <img src="assets/img/projects/project-zynga/zynga-experiments.png" alt="Experiments" class="img-fluid" style="width: 100%; height: auto;">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <h2 class="zynga-heading" style="font-size: 3rem; margin-bottom: 2rem;">Experiments</h2>
+                                <p class="zynga-body" style="font-size: 1.125rem; margin-bottom: 0;">Explored automating tooltip to take players directly to next action.</p>
+                                <p class="zynga-body" style="font-size: 1.125rem; margin-top: 0;">Hypothesis: Directing players to the next actionable step would reduce cognitive overhead in dense sessions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Stats for Experiments -->
+                <div class="row mb-5">
+                    <div class="col-12 col-lg-10 offset-lg-1">
+                        <div class="row">
+                            <div class="col-12 col-md-4">
+                                <div class="zynga-stat">
+                                    <div class="zynga-stat-value">
+                                        <span>8%</span>
+                                        <span>↓</span>
+                                    </div>
+                                    <div class="zynga-stat-label">Engagement drop on experiment group</div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="zynga-stat">
+                                    <div class="zynga-stat-value">
+                                        <span>Outcome</span>
+                                    </div>
+                                    <div class="zynga-stat-label">Feature was paused as it reduced agency within the loop.</div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="zynga-stat">
+                                    <div class="zynga-stat-value">
+                                        <span>Insight</span>
+                                    </div>
+                                    <div class="zynga-stat-label">Removing cognitive burden must not remove the player's role in the loop</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Design Philosophy Section -->
+                <div class="row mb-5">
+                    <div class="col-12 col-lg-10 offset-lg-1">
+                        <h2 class="zynga-heading">Design Philosophy</h2>
+                    </div>
+                </div>
+                
+                <div class="row mb-5">
+                    <div class="col-12 col-lg-10 offset-lg-1">
+                        <div class="row">
+                            <div class="col-12 col-md-4 mb-4">
+                                <div class="zynga-tag">
+                                    <div class="zynga-tag-circle"></div>
+                                    <div class="zynga-tag-badge">Systems first</div>
+                                </div>
+                                <p class="zynga-body">Every screen alters player state. I design for economy loops, reward pacing, and long horizon motivation. UX choices are evaluated by their effect on retention and resource flow.</p>
+                            </div>
+                            <div class="col-12 col-md-4 mb-4">
+                                <div class="zynga-tag">
+                                    <div class="zynga-tag-circle"></div>
+                                    <div class="zynga-tag-badge">Cognitive load</div>
+                                </div>
+                                <p class="zynga-body">Players skip forced tours. I use clarity, sequencing, and contextual cues so functions are learned through interaction, not explanation.</p>
+                            </div>
+                            <div class="col-12 col-md-4 mb-4">
+                                <div class="zynga-tag">
+                                    <div class="zynga-tag-circle"></div>
+                                    <div class="zynga-tag-badge">Easy Onboarding</div>
+                                </div>
+                                <p class="zynga-body">I design for progressive complexity: keep the entry path simple, reveal depth over time, and ensure new features do not add surface noise. This protects newcomers while giving long-term users room to grow.</p>
+                                <a href="#" class="zynga-button">
+                                    <span>Medium Article</span>
+                                    <span>→</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools Section -->
+                <div class="row mb-5">
+                    <div class="col-12 col-lg-10 offset-lg-1">
+                        <h2 class="zynga-heading">Tools</h2>
+                    </div>
+                </div>
+                
+                <div class="row mb-5">
+                    <div class="col-12 col-lg-10 offset-lg-1">
+                        <div class="row">
+                            <div class="col-12 col-md-4 mb-4">
+                                <p class="zynga-body" style="font-size: 1.125rem; font-weight: 700; text-transform: capitalize; margin-bottom: 1.5rem;">Designed two tier Figma system that removed ambiguity in specs and matched Unity behaviors.</p>
+                                <p class="zynga-body" style="font-size: 1.125rem;">A low fidelity set for quick layout exploration and a high fidelity set that replicated Unity assets with accurate slicing.</p>
+                            </div>
+                            <div class="col-12 col-md-4 mb-4">
+                                <p class="zynga-body" style="font-size: 1.125rem; font-weight: 700; text-transform: capitalize; margin-bottom: 1.5rem;">Multiple Legacy Systems created inconsistencies and rework.</p>
+                                <p class="zynga-body" style="font-size: 1.125rem;">The high fidelity system let teams validate real in game behavior early and resolve issues in prototypes instead of after development.</p>
+                            </div>
+                            <div class="col-12 col-md-4 mb-4">
+                                <div style="background-color: #8b6031; padding: 0.625rem 1.25rem; border-radius: 4px; display: inline-block; margin-bottom: 1.5rem;">
+                                    <p class="zynga-body" style="font-size: 1rem; font-weight: 700; margin: 0; text-align: center;">Low fidelity</p>
+                                </div>
+                                <div style="border: 1px solid #fff; padding: 0.625rem 1.25rem; border-radius: 4px; display: inline-block; margin-bottom: 1.5rem;">
+                                    <p class="zynga-body" style="font-size: 1rem; font-weight: 700; margin: 0; text-align: center;">High fidelity</p>
+                                </div>
+                                <img src="assets/img/projects/project-zynga/zynga-BP-wire.png" alt="Tasks Low Fidelity" class="img-fluid" style="width: 100%; height: auto; margin-bottom: 1.5rem;">
+                                <img src="assets/img/projects/project-zynga/zynga-BP-mockup.png" alt="Tasks High Fidelity" class="img-fluid" style="width: 100%; height: auto;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row mb-5">
+                    <div class="col-12 col-lg-10 offset-lg-1">
+                        <div class="row">
+                            <div class="col-12 col-md-6 mb-4">
+                                <p class="zynga-body" style="font-size: 1.5rem; font-weight: 700; text-transform: capitalize; margin-bottom: 1.5rem;">Unity UI Integration and Pipeline Setup</p>
+                                <p class="zynga-body" style="font-size: 1.125rem;">Built a predictable import and prefab pipeline. Removed inconsistency in slicing, batching, and structuring.</p>
+                                <p class="zynga-body" style="font-size: 1.125rem;">Created reusable prefab archetypes so seasonal reskins dropped in with minimal rework.</p>
+                            </div>
+                            <div class="col-12 col-md-6 mb-4">
+                                <div class="zynga-stat">
+                                    <div class="zynga-stat-value">
+                                        <span>80%</span>
+                                        <span>↓</span>
+                                    </div>
+                                    <div class="zynga-stat-label" style="font-size: 1.125rem;">Seasonal Reskin Time Reduced</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- User Interviews Section -->
+                <div class="row mb-5">
+                    <div class="col-12 col-lg-10 offset-lg-1">
+                        <h2 class="zynga-heading">User Interviews</h2>
+                    </div>
+                </div>
+                
+                <div class="row mb-5">
+                    <div class="col-12 col-lg-10 offset-lg-1">
+                        <div class="row">
+                            <div class="col-12 col-md-4 mb-4">
+                                <p class="zynga-body" style="font-size: 1.125rem;">Interviewed late stage players to map motivations and friction.</p>
+                            </div>
+                            <div class="col-12 col-md-4 mb-4">
+                                <p class="zynga-body" style="font-size: 1.125rem;">Identified behavioral clusters that refined personas.</p>
+                            </div>
+                            <div class="col-12 col-md-4 mb-4">
+                                <p class="zynga-body" style="font-size: 1.125rem;">Insights guided pacing, reward timing, and communication in major updates.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row mb-5">
+                    <div class="col-12 col-lg-10 offset-lg-1">
+                        <div class="row">
+                            <div class="col-12 col-md-4 text-center">
+                                <img src="assets/img/projects/project-zynga/zynga-interview-1.png" alt="User Research" class="img-fluid" style="max-width: 200px; height: auto;">
+                            </div>
+                            <div class="col-12 col-md-4 text-center">
+                                <img src="assets/img/projects/project-zynga/zynga-interview-2.png" alt="Surveys" class="img-fluid" style="max-width: 200px; height: auto;">
+                            </div>
+                            <div class="col-12 col-md-4 text-center">
+                                <img src="assets/img/projects/project-zynga/zynga-interview-3.png" alt="A/B Testing" class="img-fluid" style="max-width: 200px; height: auto;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Vendors JS -->
+    <script src="assets/js/vendors/jquery.js"></script>
+    <script src="assets/js/vendors/popper.js"></script>
+    <script src="assets/js/vendors/bootstrap.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+
