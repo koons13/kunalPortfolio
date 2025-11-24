@@ -236,8 +236,15 @@
         }
         
         /* Standardize spacing - ensure all sections have consistent 5rem spacing */
-        .container > .row.mb-section {
+        .mb-section {
             margin-bottom: 5rem !important;
+            padding-top: 8rem !important;
+        }
+        
+        /* Remove padding-top from first section */
+        .container > .mb-section:first-child,
+        .container .mb-section:first-child {
+            padding-top: 0 !important;
         }
         
         /* Project Details Section Styles */
