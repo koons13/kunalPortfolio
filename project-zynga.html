@@ -34,18 +34,30 @@
         }
         
         .zynga-title {
-            color: #FFC130;
+            color: var(--Portfolio-Primary-Color, #FFC130);
+            font-family: 'Montserrat', sans-serif;
+            font-size: 40px;
+            font-weight: 700;
+            line-height: normal;
             text-transform: uppercase;
         }
         
         .zynga-subtitle {
-            color: #ffffff;
-            text-transform: uppercase;
+            color: #FFF;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 20px;
             letter-spacing: 3px;
+            text-transform: uppercase;
         }
         
         .zynga-body {
-            color: #ffffff;
+            color: #FFF;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 28px;
         }
         
         .zynga-heading {
@@ -271,14 +283,14 @@
             <!-- Hero Section -->
             <div class="hero-section" style="background-color: #000000; min-height: 100vh; display: flex; align-items: center; margin-bottom: 5rem;">
                 <div class="container">
-                    <div class="row align-items-center">
+                    <div class="row align-items-start">
                         <div class="col-12 col-lg-6 offset-lg-1">
                             <div style="position: relative; margin-bottom: 2rem;">
                                 <img src="assets/img/projects/project-zynga/zynga-cover.png" alt="Country Escape" class="img-fluid" style="width: 100%; height: auto;">
                             </div>
                         </div>
-                        <div class="col-12 col-lg-4 offset-lg-7">
-                            <h1 class="text-heading-1 zynga-title mb-4">Country Escape</h1>
+                        <div class="col-12 col-lg-4" style="padding-top: 0;">
+                            <h2 class="text-heading-2 zynga-title mb-4">Country Escape</h2>
                             <p class="text-content zynga-subtitle mb-4">UI/UX Designer | 2021-2024</p>
                             <p class="text-content zynga-body">Owned UX for live events, progression systems, and monetization flows in mobile farming game. Designed system-level interactions that influenced retention, engagement, and revenue.</p>
                         </div>
