@@ -249,7 +249,8 @@
         }
         
         /* Project Details Section Styles */
-        .zynga-detail-header {
+        /* Hero Section - Original Styles */
+        .zynga-hero-header {
             color: #FFF;
             font-family: Montserrat;
             font-size: 18px;
@@ -258,13 +259,35 @@
             line-height: 28px;
         }
         
-        .zynga-detail-value {
+        .zynga-hero-value {
             color: #D3D3D3;
             font-family: Montserrat;
             font-size: 14px;
             font-style: normal;
             font-weight: 400;
             line-height: 28px;
+        }
+        
+        /* Other Sections - New Styles */
+        .zynga-detail-value {
+            color: var(--Portfolio-Primary-Color, #FFC130);
+            font-family: Montserrat;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 28px;
+            letter-spacing: -0.2px;
+            text-transform: uppercase;
+        }
+        
+        .zynga-detail-header {
+            color: #FFF;
+            font-family: Montserrat;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 28px;
+            text-transform: capitalize;
         }
         
         .zynga-detail-divider {
@@ -332,29 +355,29 @@
                                     <div class="detail-item d-flex align-items-start mb-4">
                                         <div class="detail-divider zynga-detail-divider"></div>
                                         <div>
-                                            <h3 class="body-text text-primary mb-2 zynga-detail-header">UX Team Size</h3>
-                                            <p class="body-text-context mb-0 zynga-detail-value">4-6 members</p>
+                                            <h3 class="body-text text-primary mb-2 zynga-hero-header">UX Team Size</h3>
+                                            <p class="body-text-context mb-0 zynga-hero-value">4-6 members</p>
                                         </div>
                                     </div>
                                     <div class="detail-item d-flex align-items-start mb-4">
                                         <div class="detail-divider zynga-detail-divider"></div>
                                         <div>
-                                            <h3 class="body-text text-primary mb-2 zynga-detail-header">Active Users</h3>
-                                            <p class="body-text-context mb-0 zynga-detail-value">400k+ DAU</p>
+                                            <h3 class="body-text text-primary mb-2 zynga-hero-header">Active Users</h3>
+                                            <p class="body-text-context mb-0 zynga-hero-value">400k+ DAU</p>
                                         </div>
                                     </div>
                                     <div class="detail-item d-flex align-items-start mb-4">
                                         <div class="detail-divider zynga-detail-divider"></div>
                                         <div>
-                                            <h3 class="body-text text-primary mb-2 zynga-detail-header">Tools</h3>
-                                            <p class="body-text-context mb-0 zynga-detail-value">Figma, Unity</p>
+                                            <h3 class="body-text text-primary mb-2 zynga-hero-header">Tools</h3>
+                                            <p class="body-text-context mb-0 zynga-hero-value">Figma, Unity</p>
                                         </div>
                                     </div>
                                     <div class="detail-item d-flex align-items-start mb-4">
                                         <div class="detail-divider zynga-detail-divider"></div>
                                         <div>
-                                            <h3 class="body-text text-primary mb-2 zynga-detail-header">Period</h3>
-                                            <p class="body-text-context mb-0 zynga-detail-value">3.5 Years</p>
+                                            <h3 class="body-text text-primary mb-2 zynga-hero-header">Period</h3>
+                                            <p class="body-text-context mb-0 zynga-hero-value">3.5 Years</p>
                                         </div>
                                     </div>
                                 </div>
@@ -405,30 +428,31 @@
                 
                 <!-- Stats for Battlepass -->
                 <div class="row mb-section">
-                    <div class="col-12 col-md-4 offset-lg-1">
-                        <div class="zynga-stat">
-                            <div class="zynga-stat-value">
-                                <span>20%</span>
-                                <span>↑</span>
+                    <div class="col-12 col-lg-10 offset-lg-1">
+                        <div class="project-details-section">
+                            <div class="d-flex flex-wrap justify-content-between">
+                                <div class="detail-item d-flex align-items-start mb-4">
+                                    <div class="detail-divider zynga-detail-divider"></div>
+                                    <div>
+                                        <p class="body-text-context mb-2 zynga-detail-value">20% ↑</p>
+                                        <h3 class="body-text text-primary mb-0 zynga-detail-header">ARPU Uptick</h3>
+                                    </div>
+                                </div>
+                                <div class="detail-item d-flex align-items-start mb-4">
+                                    <div class="detail-divider zynga-detail-divider"></div>
+                                    <div>
+                                        <p class="body-text-context mb-2 zynga-detail-value">7% ↑</p>
+                                        <h3 class="body-text text-primary mb-0 zynga-detail-header">Core Actions During the Season</h3>
+                                    </div>
+                                </div>
+                                <div class="detail-item d-flex align-items-start mb-4">
+                                    <div class="detail-divider zynga-detail-divider"></div>
+                                    <div>
+                                        <p class="body-text-context mb-2 zynga-detail-value">60%</p>
+                                        <h3 class="body-text text-primary mb-0 zynga-detail-header">Completion Rate Across the Full Progression</h3>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="zynga-stat-label text-content">ARPU uptick</div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="zynga-stat">
-                            <div class="zynga-stat-value">
-                                <span>7%</span>
-                                <span>↑</span>
-                            </div>
-                            <div class="zynga-stat-label text-content">core actions during the season</div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="zynga-stat">
-                            <div class="zynga-stat-value">
-                                <span>60%</span>
-                            </div>
-                            <div class="zynga-stat-label text-content">completion rate across the full progression</div>
                         </div>
                     </div>
                 </div>
@@ -450,30 +474,31 @@
                 
                 <!-- Stats for Seasonal Sale -->
                 <div class="row mb-section">
-                    <div class="col-12 col-md-4 offset-lg-1">
-                        <div class="zynga-stat">
-                            <div class="zynga-stat-value">
-                                <span>10%</span>
-                                <span>↑</span>
+                    <div class="col-12 col-lg-10 offset-lg-1">
+                        <div class="project-details-section">
+                            <div class="d-flex flex-wrap justify-content-between">
+                                <div class="detail-item d-flex align-items-start mb-4">
+                                    <div class="detail-divider zynga-detail-divider"></div>
+                                    <div>
+                                        <p class="body-text-context mb-2 zynga-detail-value">10% ↑</p>
+                                        <h3 class="body-text text-primary mb-0 zynga-detail-header">Revenue Uplift Without Affecting Baseline Systems</h3>
+                                    </div>
+                                </div>
+                                <div class="detail-item d-flex align-items-start mb-4">
+                                    <div class="detail-divider zynga-detail-divider"></div>
+                                    <div>
+                                        <p class="body-text-context mb-2 zynga-detail-value">12% ↑</p>
+                                        <h3 class="body-text text-primary mb-0 zynga-detail-header">Core Loop Actions for Purchasers</h3>
+                                    </div>
+                                </div>
+                                <div class="detail-item d-flex align-items-start mb-4">
+                                    <div class="detail-divider zynga-detail-divider"></div>
+                                    <div>
+                                        <p class="body-text-context mb-2 zynga-detail-value">65%</p>
+                                        <h3 class="body-text text-primary mb-0 zynga-detail-header">Completion Rate for Purchasers</h3>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="zynga-stat-label text-content">Revenue uplift without affecting Baseline Systems</div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="zynga-stat">
-                            <div class="zynga-stat-value">
-                                <span>12%</span>
-                                <span>↑</span>
-                            </div>
-                            <div class="zynga-stat-label text-content">Core loop actions for purchasers</div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="zynga-stat">
-                            <div class="zynga-stat-value">
-                                <span>65%</span>
-                            </div>
-                            <div class="zynga-stat-label text-content">Completion rate for purchasers</div>
                         </div>
                     </div>
                 </div>
@@ -502,30 +527,31 @@
                 
                 <!-- Stats for Web Store -->
                 <div class="row mb-section">
-                    <div class="col-12 col-md-4 offset-lg-1">
-                        <div class="zynga-stat">
-                            <div class="zynga-stat-value">
-                                <span>25%</span>
-                                <span>↑</span>
+                    <div class="col-12 col-lg-10 offset-lg-1">
+                        <div class="project-details-section">
+                            <div class="d-flex flex-wrap justify-content-between">
+                                <div class="detail-item d-flex align-items-start mb-4">
+                                    <div class="detail-divider zynga-detail-divider"></div>
+                                    <div>
+                                        <p class="body-text-context mb-2 zynga-detail-value">25% ↑</p>
+                                        <h3 class="body-text text-primary mb-0 zynga-detail-header">Click Through From Daily Reward Flow</h3>
+                                    </div>
+                                </div>
+                                <div class="detail-item d-flex align-items-start mb-4">
+                                    <div class="detail-divider zynga-detail-divider"></div>
+                                    <div>
+                                        <p class="body-text-context mb-2 zynga-detail-value">32% ↑ (Month-Over-Month Increase)</p>
+                                        <h3 class="body-text text-primary mb-0 zynga-detail-header">Web Store Purchase Conversion</h3>
+                                    </div>
+                                </div>
+                                <div class="detail-item d-flex align-items-start mb-4">
+                                    <div class="detail-divider zynga-detail-divider"></div>
+                                    <div>
+                                        <p class="body-text-context mb-2 zynga-detail-value">15%</p>
+                                        <h3 class="body-text text-primary mb-0 zynga-detail-header">Higher Net Revenue Per Purchase</h3>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="zynga-stat-label text-content">Click Through From Daily Reward Flow</div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="zynga-stat">
-                            <div class="zynga-stat-value">
-                                <span>32%</span>
-                                <span>↑</span>
-                            </div>
-                            <div class="zynga-stat-label text-content">Web Store Purchase Conversion (Month-Over-Month Increase)</div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="zynga-stat">
-                            <div class="zynga-stat-value">
-                                <span>15%</span>
-                            </div>
-                            <div class="zynga-stat-label text-content">Higher Net Revenue Per Purchase</div>
                         </div>
                     </div>
                 </div>
@@ -547,30 +573,31 @@
                 
                 <!-- Stats for HUD Redesign -->
                 <div class="row mb-section">
-                    <div class="col-12 col-md-4 offset-lg-1">
-                        <div class="zynga-stat">
-                            <div class="zynga-stat-value">
-                                <span>+ 3</span>
-                                <span>↑</span>
+                    <div class="col-12 col-lg-10 offset-lg-1">
+                        <div class="project-details-section">
+                            <div class="d-flex flex-wrap justify-content-between">
+                                <div class="detail-item d-flex align-items-start mb-4">
+                                    <div class="detail-divider zynga-detail-divider"></div>
+                                    <div>
+                                        <p class="body-text-context mb-2 zynga-detail-value">+ 3 ↑</p>
+                                        <h3 class="body-text text-primary mb-0 zynga-detail-header">HUD Slots Created Without Adding a New Row</h3>
+                                    </div>
+                                </div>
+                                <div class="detail-item d-flex align-items-start mb-4">
+                                    <div class="detail-divider zynga-detail-divider"></div>
+                                    <div>
+                                        <p class="body-text-context mb-2 zynga-detail-value">20% ↑</p>
+                                        <h3 class="body-text text-primary mb-0 zynga-detail-header">Reduction in Icon-State Complexity for Events</h3>
+                                    </div>
+                                </div>
+                                <div class="detail-item d-flex align-items-start mb-4">
+                                    <div class="detail-divider zynga-detail-divider"></div>
+                                    <div>
+                                        <p class="body-text-context mb-2 zynga-detail-value">0</p>
+                                        <h3 class="body-text text-primary mb-0 zynga-detail-header">CS Tickets After Rollout</h3>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="zynga-stat-label text-content">HUD slots created without adding a new row</div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="zynga-stat">
-                            <div class="zynga-stat-value">
-                                <span>20%</span>
-                                <span>↑</span>
-                            </div>
-                            <div class="zynga-stat-label text-content">20 percent reduction in icon-state complexity for events</div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="zynga-stat">
-                            <div class="zynga-stat-value">
-                                <span>0</span>
-                            </div>
-                            <div class="zynga-stat-label text-content">CS tickets after rollout</div>
                         </div>
                     </div>
                 </div>
@@ -589,29 +616,31 @@
                 
                 <!-- Stats for Experiments -->
                 <div class="row mb-section">
-                    <div class="col-12 col-md-4 offset-lg-1">
-                        <div class="zynga-stat">
-                            <div class="zynga-stat-value">
-                                <span>8%</span>
-                                <span>↓</span>
+                    <div class="col-12 col-lg-10 offset-lg-1">
+                        <div class="project-details-section">
+                            <div class="d-flex flex-wrap justify-content-between">
+                                <div class="detail-item d-flex align-items-start mb-4">
+                                    <div class="detail-divider zynga-detail-divider"></div>
+                                    <div>
+                                        <p class="body-text-context mb-2 zynga-detail-value">8% ↓</p>
+                                        <h3 class="body-text text-primary mb-0 zynga-detail-header">Engagement Drop on Experiment Group</h3>
+                                    </div>
+                                </div>
+                                <div class="detail-item d-flex align-items-start mb-4">
+                                    <div class="detail-divider zynga-detail-divider"></div>
+                                    <div>
+                                        <p class="body-text-context mb-2 zynga-detail-value">Feature was paused as it reduced agency within the loop.</p>
+                                        <h3 class="body-text text-primary mb-0 zynga-detail-header">Outcome</h3>
+                                    </div>
+                                </div>
+                                <div class="detail-item d-flex align-items-start mb-4">
+                                    <div class="detail-divider zynga-detail-divider"></div>
+                                    <div>
+                                        <p class="body-text-context mb-2 zynga-detail-value">Removing cognitive burden must not remove the player's role in the loop</p>
+                                        <h3 class="body-text text-primary mb-0 zynga-detail-header">Insight</h3>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="zynga-stat-label text-content">Engagement drop on experiment group</div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="zynga-stat">
-                            <div class="zynga-stat-value">
-                                <span>Outcome</span>
-                            </div>
-                            <div class="zynga-stat-label text-content">Feature was paused as it reduced agency within the loop.</div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="zynga-stat">
-                            <div class="zynga-stat-value">
-                                <span>Insight</span>
-                            </div>
-                            <div class="zynga-stat-label text-content">Removing cognitive burden must not remove the player's role in the loop</div>
                         </div>
                     </div>
                 </div>
@@ -686,12 +715,14 @@
                         <p class="text-content zynga-body">Created reusable prefab archetypes so seasonal reskins dropped in with minimal rework.</p>
                     </div>
                     <div class="col-12 col-md-6 mb-4">
-                        <div class="zynga-stat">
-                            <div class="zynga-stat-value">
-                                <span>80%</span>
-                                <span>↓</span>
+                        <div class="project-details-section">
+                            <div class="detail-item d-flex align-items-start mb-4">
+                                <div class="detail-divider zynga-detail-divider"></div>
+                                <div>
+                                    <p class="body-text-context mb-2 zynga-detail-value">80% ↓</p>
+                                    <h3 class="body-text text-primary mb-0 zynga-detail-header">Seasonal Reskin Time Reduced</h3>
+                                </div>
                             </div>
-                            <div class="zynga-stat-label text-content">Seasonal Reskin Time Reduced</div>
                         </div>
                     </div>
                 </div>
