@@ -27,10 +27,9 @@ Your portfolio now has a fully functional dark mode toggle that works across all
 
 ## Files Updated
 
-### HTML Files (8 total)
+### HTML Files (7 total)
 - `index.html` - Main portfolio page
 - `writings.html` - Writings/articles page
-- `products.html` - Products launched page
 - `project-ficus-notes.html` - Ficus Notes case study
 - `project-battlepass-fvce.html` - Battle Pass case study
 - `project-check-in-app.html` - Event Check-In app case study
